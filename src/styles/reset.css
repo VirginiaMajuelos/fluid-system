@@ -1,0 +1,52 @@
+/* reset.css */
+
+/* Box-sizing border-box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Resets */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* List styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+}
+
+/* Form elements */
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+}

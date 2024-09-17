@@ -1,10 +1,17 @@
+/* En header.css */
 .fs-header {
+  background-color: var(--bg-light);
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 15px 20px;
   font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .fs-header svg {
@@ -29,4 +36,9 @@
   margin-right: 10px;
   color: #333;
   font-size: 14px;
+}
+
+/* Agregar un margen superior al contenido principal */
+.main-content {
+  margin-top: 75px; /* Ajusta según la altura del header */
 }

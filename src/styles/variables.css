@@ -1,0 +1,95 @@
+/* variables.css */
+
+/* Colores */
+:root {
+  --primary: #c7ff65;
+  --secondary: #a3a3f9;
+  --tertiary: #545fe7;
+  --basic-dark: #151321;
+  --basic-light: #f4f4f4;
+  --bg-dark: #151321;
+  --bg-light: #f2f2f2;
+
+  /* Tipografía */
+  --font-family: "Quicksand", sans-serif;
+  --font-size-base: 16px;
+
+  /* Espaciado */
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 32px;
+
+  /* Bordes */
+  --border-radius: 4px;
+
+  max-width: 1280px;
+  margin: 0 auto;
+  /* padding: 2rem; */
+  text-align: center;
+
+  /* Fontsize */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-size-h1-mobile: 32px;
+  --font-size-h1-tablet: 56px;
+  --font-size-h1-desktop: 64px;
+  --font-size-h2-mobile: 28px;
+  --font-size-h2-tablet: 40px;
+  --font-size-h2-desktop: 56px;
+  --font-size-h3-mobile: 24px;
+  --font-size-h3-tablet: 34px;
+  --font-size-h3-desktop: 40px;
+  --font-size-h4-mobile: 20px;
+  --font-size-h4-tablet: 24px;
+  --font-size-h4-desktop: 28px;
+  --font-size-h5-mobile: 18px;
+  --font-size-h5-tablet: 20px;
+  --font-size-h5-desktop: 20px;
+  --font-size-body-mobile: 16px;
+  --font-size-body-tablet: 18px;
+  --font-size-body-desktop: 18px;
+  --font-size-footnote: 14px;
+
+  /* spacing */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
+  --spacing-6: 1.5rem;
+  --spacing-7: 2rem;
+  --spacing-8: 2.5rem;
+  --spacing-9: 3rem;
+  --spacing-10: 3.5rem;
+  --spacing-11: 4rem;
+  --spacing-12: 5rem;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --spacing-3: 1rem;
+    --spacing-4: 1.25rem;
+    --spacing-6: 1.75rem;
+    --spacing-7: 2rem;
+    --spacing-8: 2.5rem;
+    --spacing-9: 3rem;
+    --spacing-10: 3.5rem;
+    --spacing-11: 4.5rem;
+    --spacing-12: 5rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  :root {
+    --spacing-3: 1rem;
+    --spacing-4: 1.25rem;
+    --spacing-6: 2rem;
+    --spacing-7: 2.5rem;
+    --spacing-8: 3rem;
+    --spacing-9: 3.5rem;
+    --spacing-10: 4rem;
+    --spacing-11: 4.5rem;
+    --spacing-12: 5rem;
+  }
+}

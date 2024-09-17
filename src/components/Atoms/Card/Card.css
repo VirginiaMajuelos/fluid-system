@@ -1,12 +1,11 @@
 .fs-card {
-  --spacing-min: 2px;
   border-radius: 0.375rem;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
-  padding: 1rem;
+  padding: var(--spacing-4);
   overflow: hidden;
   color: black;
-  margin: 1rem;
+  margin: var(--spacing-4);
   display: inline-block; /* Ajusta la card al tamaño del contenido */
   min-width: 200px; /* Tamaño mínimo para cada card */
   min-height: 150px; /* Tamaño mínimo para cada card */
@@ -17,6 +16,7 @@
   font-size: 14px;
   min-width: 200px; /* Tamaño mínimo */
   min-height: 150px; /* Tamaño mínimo */
+  text-align: left;
 }
 
 .fs-card--medium {
@@ -24,11 +24,13 @@
   font-size: 16px;
   min-width: 300px; /* Tamaño mínimo */
   min-height: 200px; /* Tamaño mínimo */
+  text-align: left;
 }
 
 .fs-card--large {
-  padding: 12px 24px;
+  padding: 24px;
   font-size: 18px;
   min-width: 400px; /* Tamaño mínimo */
   min-height: 300px; /* Tamaño mínimo */
+  text-align: left;
 }

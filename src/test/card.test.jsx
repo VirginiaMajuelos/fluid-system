@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { describe, it, expect } from "vitest";
-import { Card } from "../stories/Atoms/Card/Card";
+import { Card } from "../components/Atoms/Card/Card";
 
 const cardVariants = [
   {

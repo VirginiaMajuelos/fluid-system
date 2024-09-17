@@ -1,0 +1,36 @@
+/* Sidebar.css */
+.fs-sidebar {
+  position: fixed;
+  left: 0;
+  top: 70px; /* Ajuste para evitar que el sidebar se superponga con el header */
+  height: calc(
+    100% - 60px
+  ); /* Altura calculada para restar el espacio del header */
+  width: 250px;
+  background-color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: var(--spacing-4);
+}
+
+.fs-sidebar__menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.fs-sidebar__menu ul li {
+  margin: 20px 0;
+}
+
+.fs-sidebar__menu ul li a {
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 18px;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.fs-sidebar__menu ul li a:hover {
+  color: var(--basic-dark); /* Color de hover */
+}

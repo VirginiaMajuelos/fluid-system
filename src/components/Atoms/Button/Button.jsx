@@ -47,6 +47,7 @@ Button.propTypes = {
     "success",
     "danger",
     "warning",
+    "mosaic",
   ]),
   /** Optional click handler */
   onClick: PropTypes.func,

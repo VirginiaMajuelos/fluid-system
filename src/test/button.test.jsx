@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { describe, it, expect } from "vitest";
-import { Button } from "../stories/Atoms/Button/Button";
+import { Button } from "../components/Atoms/Button/Button";
 
 // Definimos las variantes de los botones que queremos testear
 const buttonVariants = [

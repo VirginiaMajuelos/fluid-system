@@ -1,3 +1,4 @@
+/* Global Resets */
 * {
   margin: 0;
   padding: 0;
@@ -5,14 +6,253 @@
 }
 
 body {
-  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
+  background-color: var(--bg-dark);
   font-weight: 500;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
+/* Background */
 .fs-background {
   background-color: #f2f2f2;
+}
+
+/* Typography - Headings */
+.fs-h1,
+.fs-h1--lt,
+.fs-h2,
+.fs-h2--lt,
+.fs-h3,
+.fs-h3--lt,
+.fs-h4,
+.fs-h4--lt,
+.fs-h5,
+.fs-h5--lt {
+  font-weight: var(--font-weight-normal);
+}
+
+.fs-h1--lt,
+.fs-h2--lt,
+.fs-h3--lt,
+.fs-h4--lt,
+.fs-h5--lt {
+  font-weight: var(--font-weight-light);
+}
+
+.fs-h1 {
+  font-size: var(--font-size-h1-mobile);
+}
+
+.fs-h2 {
+  font-size: var(--font-size-h2-mobile);
+}
+
+.fs-h3 {
+  font-size: var(--font-size-h3-mobile);
+}
+
+.fs-h4 {
+  font-size: var(--font-size-h4-mobile);
+}
+
+.fs-h5 {
+  font-size: var(--font-size-h5-mobile);
+}
+
+.fs--body {
+  font-size: var(--font-size-body-mobile);
+  font-weight: var(--font-weight-normal);
+  margin-bottom: var(--spacing-4);
+}
+
+.fs--footnote {
+  font-size: var(--font-size-footnote);
+  font-weight: var(--font-weight-normal);
+}
+
+/* Media Queries for Responsive Typography */
+@media (min-width: 768px) {
+  .fs-h1 {
+    font-size: var(--font-size-h1-tablet);
+  }
+  .fs-h2 {
+    font-size: var(--font-size-h2-tablet);
+  }
+  .fs-h3 {
+    font-size: var(--font-size-h3-tablet);
+  }
+  .fs-h4 {
+    font-size: var(--font-size-h4-tablet);
+  }
+  .fs-h5 {
+    font-size: var(--font-size-h5-tablet);
+  }
+  .fs--body {
+    font-size: var(--font-size-body-tablet);
+  }
+}
+
+@media (min-width: 1024px) {
+  .fs-h1 {
+    font-size: var(--font-size-h1-desktop);
+  }
+  .fs-h2 {
+    font-size: var(--font-size-h2-desktop);
+  }
+  .fs-h3 {
+    font-size: var(--font-size-h3-desktop);
+  }
+  .fs-h4 {
+    font-size: var(--font-size-h4-desktop);
+  }
+  .fs-h5 {
+    font-size: var(--font-size-h5-desktop);
+  }
+  .fs--body {
+    font-size: var(--font-size-body-desktop);
+  }
+}
+
+@media (min-width: 1440px) {
+  /* Opcional: ajustes para pantallas grandes */
+}
+
+/* Text Colors */
+.fs-txt-primary {
+  color: var(--primary);
+}
+
+.fs-txt-secondary {
+  color: var(--secondary);
+}
+
+.fs-txt-tertiary {
+  color: var(--tertiary);
+}
+
+.fs-txt-dark {
+  color: var(--basic-dark);
+}
+
+.fs-txt-light {
+  color: var(--basic-light);
+}
+
+/* Background Colors */
+.fs-bg-primary {
+  background-color: var(--primary);
+}
+
+.fs-bg-secondary {
+  background-color: var(--secondary);
+}
+
+.fs-bg-tertiary {
+  background-color: var(--tertiary);
+}
+
+.fs-bg-dark {
+  background-color: var(--bg-dark);
+}
+
+.fs-bg-light {
+  background-color: var(--bg-light);
+}
+
+/* Margins */
+
+.fs--m {
+  margin: var(--spacing-0);
+}
+
+.fs--m1 {
+  margin: var(--spacing-1);
+}
+.fs--m2 {
+  margin: var(--spacing-2);
+}
+.fs--m3 {
+  margin: var(--spacing-3);
+}
+.fs--m4 {
+  margin: var(--spacing-4);
+}
+.fs--m5 {
+  margin: var(--spacing-5);
+}
+.fs--m6 {
+  margin: var(--spacing-6);
+}
+.fs--m7 {
+  margin: var(--spacing-7);
+}
+.fs--m8 {
+  margin: var(--spacing-8);
+}
+.fs--m9 {
+  margin: var(--spacing-9);
+}
+.fs--m10 {
+  margin: var(--spacing-10);
+}
+.fs--m11 {
+  margin: var(--spacing-11);
+}
+.fs--m12 {
+  margin: var(--spacing-12);
+}
+
+/* Padding Utility Classes */
+.fs--p {
+  padding: var(--spacing-0);
+}
+
+.fs--p1 {
+  padding: var(--spacing-1);
+}
+.fs--p2 {
+  padding: var(--spacing-2);
+}
+.fs--p3 {
+  padding: var(--spacing-3);
+}
+.fs--p4 {
+  padding: var(--spacing-4);
+}
+.fs--p5 {
+  padding: var(--spacing-5);
+}
+.fs--p6 {
+  padding: var(--spacing-6);
+}
+.fs--p7 {
+  padding: var(--spacing-7);
+}
+.fs--p8 {
+  padding: var(--spacing-8);
+}
+.fs--p9 {
+  padding: var(--spacing-9);
+}
+.fs--p10 {
+  padding: var(--spacing-10);
+}
+.fs--p11 {
+  padding: var(--spacing-11);
+}
+.fs--p12 {
+  padding: var(--spacing-12);
+}
+
+.fs--logo {
+  width: 40px; /* Ajusta el tamaño del logo */
+  height: auto; /* Mantiene la proporción */
+}
+
+.fs-home-content {
+  margin-left: 250px; /* Deja espacio para el sidebar */
+  padding: 20px; /* Opcional: ajusta el espaciado interno */
 }

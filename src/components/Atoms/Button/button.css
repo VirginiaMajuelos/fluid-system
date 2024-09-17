@@ -30,6 +30,11 @@
   background-color: #ffc107;
   color: black;
 }
+
+.fs-button--mosaic {
+  background-color: #c7ff65;
+  color: #151321;
+}
 .fs-button--small {
   padding: 10px 16px;
   font-size: 12px;

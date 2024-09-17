@@ -1,0 +1,44 @@
+[
+  {
+    "id": "button",
+    "title": "Button Component",
+    "description": "This is a button component used for triggering actions.",
+    "code": "<Button variant=\"primary\">Click Me</Button>",
+    "component": "<Button />"
+  },
+  {
+    "id": "card",
+    "title": "Card Component",
+    "description": "This is a card component used for displaying content.",
+    "code": "<Card size=\"large\">This is a card</Card>",
+    "component": "<Card />"
+  },
+  {
+    "id": "componente-1",
+    "title": "Component 1",
+    "description": "This is a button component used for triggering actions.",
+    "code": "<Button variant=\"primary\">Click Me</Button>",
+    "component": "<Button />"
+  },
+  {
+    "id": "componente-2",
+    "title": "Component 2",
+    "description": "This is a card component used for displaying content.",
+    "code": "<Card size=\"large\">This is a card</Card>",
+    "component": "<Card />"
+  },
+  {
+    "id": "componente-3",
+    "title": "Componente 3",
+    "description": "This is a button component used for triggering actions.",
+    "code": "<Button variant=\"primary\">Click Me</Button>",
+    "component": "<Button />"
+  },
+  {
+    "id": "componente-4",
+    "title": "Componente 4",
+    "description": "This is a card component used for displaying content.",
+    "code": "<Card size=\"large\">This is a card</Card>",
+    "component": "<Card />"
+  }
+]

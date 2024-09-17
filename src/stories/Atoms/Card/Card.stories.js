@@ -1,5 +1,5 @@
 import { fn } from "@storybook/test";
-import { Card } from "./Card";
+import { Card } from "../../../components/Atoms/Card/Card.jsx";
 
 export default {
   title: "Atoms/Card",

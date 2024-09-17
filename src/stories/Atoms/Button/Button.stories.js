@@ -1,6 +1,6 @@
 import { fn } from "@storybook/test";
 
-import { Button } from "./Button";
+import { Button } from "../../../components/Atoms/Button/Button.jsx";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 export default {
@@ -56,16 +56,23 @@ export const Warning = {
   },
 };
 
+export const Mosaic = {
+  args: {
+    children: "Mosaic Button",
+    variant: "mosaic",
+  },
+};
+
 export const Large = {
   args: {
     size: "large",
-    label: "Button",
+    children: "Button",
   },
 };
 
 export const Small = {
   args: {
     size: "small",
-    label: "Button",
+    children: "Button",
   },
 };
