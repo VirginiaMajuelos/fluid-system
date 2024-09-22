@@ -6,12 +6,14 @@
   height: calc(
     100% - 60px
   ); /* Altura calculada para restar el espacio del header */
-  width: 250px;
-  background-color: var(--secondary);
+  width: 200px;
+  background-color: var(--bg-dark);
   display: flex;
   flex-direction: column;
   justify-content: start;
   padding: var(--spacing-4);
+  border-right: 1px solid var(--basic-light);
+  text-align: start;
 }
 
 .fs-sidebar__menu ul {
@@ -23,14 +25,16 @@
   margin: 20px 0;
 }
 
-.fs-sidebar__menu ul li a {
+.fs-sidebar__menu ul li {
   text-decoration: none;
   color: var(--primary);
   font-size: 18px;
+  font-weight: 300;
   display: block;
   transition: color 0.3s ease;
 }
 
 .fs-sidebar__menu ul li a:hover {
-  color: var(--basic-dark); /* Color de hover */
+  color: var(--basic-light); /* Color de hover */
+  cursor: pointer;
 }

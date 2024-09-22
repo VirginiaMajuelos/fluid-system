@@ -27,7 +27,8 @@ dd {
 
 /* List styles */
 ul,
-ol {
+ol,
+li {
   list-style: none;
 }
 
@@ -49,4 +50,8 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   border: none;
+}
+
+a {
+  text-decoration: none;
 }

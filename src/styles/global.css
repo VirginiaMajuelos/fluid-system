@@ -8,7 +8,6 @@
 body {
   font-family: var(--font-family);
   background-color: var(--bg-dark);
-  font-weight: 500;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,7 +64,7 @@ body {
 .fs--body {
   font-size: var(--font-size-body-mobile);
   font-weight: var(--font-weight-normal);
-  margin-bottom: var(--spacing-4);
+  margin: var(--spacing-4) 0 var(--spacing-4) 0;
 }
 
 .fs--footnote {
@@ -139,6 +138,10 @@ body {
 
 .fs-txt-light {
   color: var(--basic-light);
+}
+
+.fs-txt-center {
+  text-align: center;
 }
 
 /* Background Colors */
@@ -252,7 +255,61 @@ body {
   height: auto; /* Mantiene la proporción */
 }
 
-.fs-home-content {
-  margin-left: 250px; /* Deja espacio para el sidebar */
-  padding: 20px; /* Opcional: ajusta el espaciado interno */
+.fs--link {
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.fs--link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.fs--divider {
+  width: 100%;
+  margin: var(--spacing-6) 0;
+  border-top: 1px solid var(--border-color); /* Usar el color de borde ya definido */
+}
+
+.fs--code {
+  margin: var(--spacing-4) auto;
+  background-color: var(--basic-light);
+  color: var(--basic-dark);
+  padding: var(--spacing-2);
+  border-radius: 5px;
+  width: 340px;
+  display: flex;
+  justify-content: space-between; /* Distribuye el contenido entre los extremos */
+  align-items: center;
+  text-align: center;
+  position: relative; /* Para la posición absoluta del botón */
+}
+
+.copy-button {
+  background-color: var(--primary);
+  border: none;
+  color: var(--basic-dark);
+  padding: var(--spacing-1) var(--spacing-2);
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 8px;
+  transition: background-color 0.3s;
+}
+
+.copy-button:hover {
+  background-color: var(--secondary); /* Cambia el color al pasar el cursor */
+}
+
+.copy-success {
+  font-size: 12px;
+  color: var(--primary);
+  margin-top: var(--spacing-1);
+  text-align: center;
+}
+
+img {
+  display: block; /* Asegúrate de que la imagen sea un bloque */
+  margin-left: auto;
+  margin-right: auto;
 }

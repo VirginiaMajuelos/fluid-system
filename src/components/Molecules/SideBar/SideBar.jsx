@@ -1,21 +1,30 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import componentsData from "../../../Mocks/componentsData.json";
 import "./SideBar.css";
 
 const SideBar = () => {
   return (
-    <div className="fs-sidebar">
-      <nav className="fs-sidebar__menu">
-        <p>Componentes</p>
+    <aside
+      className="fs-sidebar"
+      aria-label="Sidebar de navegación de componentes"
+    >
+      <nav className="fs-sidebar__menu" role="navigation">
+        <p className="fs-txt-light">Componentes</p>
         <ul>
-          <li>Button</li>
-          <li>Card</li>
-          <li>Componente 1</li>
-          <li>Componente 2</li>
-          <li>Componente 3</li>
-          <li>Componente 4</li>
+          {componentsData.map((componentItem) => (
+            <li key={componentItem.id}>
+              <Link
+                to={`/components/${componentItem.id}`}
+                className="fs--link fs-txt-primary"
+              >
+                {componentItem.title}
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
-    </div>
+    </aside>
   );
 };
 
