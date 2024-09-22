@@ -1,0 +1,34 @@
+.fs--section {
+  margin-left: 220px; /* Espacio para el SideBar */
+  display: inline-block;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: calc(100% - 220px); /* Ajustar ancho considerando el SideBar */
+  min-height: 100vh; /* Permitir crecimiento */
+  padding: var(--spacing-5);
+  padding-top: 120px;
+  overflow-y: auto;
+}
+
+.fs--content-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1rem;
+  margin-top: 20px; /* Espacio entre el h1 y las tarjetas */
+}
+
+.fs--section h1 {
+  width: 100%;
+  display: block; /* Asegura que el h1 esté en su propia línea */
+  text-align: center; /* Centrar el texto del h1 */
+  margin-bottom: 20px; /* Espacio adicional si es necesario */
+}
+
+img {
+  width: 250px; /* Ajustar la imagen al ancho de la tarjeta */
+  height: 150px; /* Altura fija para todas las imágenes */
+  object-fit: cover; /* Ajustar la imagen para cubrir el espacio sin distorsión */
+  border-radius: 8px;
+}

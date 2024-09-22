@@ -64,6 +64,8 @@
   --spacing-10: 3.5rem;
   --spacing-11: 4rem;
   --spacing-12: 5rem;
+  --spacing-13: 6rem;
+  --spacing-14: 7rem;
 }
 
 @media (min-width: 768px) {

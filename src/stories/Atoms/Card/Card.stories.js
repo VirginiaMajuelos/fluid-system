@@ -17,20 +17,20 @@ export default {
 export const Small = {
   args: {
     size: "small",
-    children: "Card tamaño small",
+    children: "Card Lorem ipsum dolor.",
   },
 };
 
 export const Medium = {
   args: {
     size: "medium",
-    children: "Card tamaño medium",
+    children: "Card Lorem ipsum dolor.",
   },
 };
 
 export const Large = {
   args: {
     size: "large",
-    children: "Card tamaño large",
+    children: "Card Lorem ipsum dolor.",
   },
 };

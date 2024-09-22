@@ -2,22 +2,23 @@ import React from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { Button } from "../../Atoms/Button/Button";
-import logo from "../../../assets/logo.svg"; // Importa la imagen
+import logo from "../../../assets/logo.svg";
 import "./header.css";
 
-export const Header = ({ user, onLogin, onLogout, onCreateAccount, title }) => (
+export const Header = ({
+  user = null,
+  onLogin,
+  onLogout,
+  onCreateAccount,
+  title = "",
+}) => (
   <header>
     <div className="fs-header">
       <div>
         <Link to="/">
-          <img
-            className="fs--logo"
-            src={logo} // Usa la variable importada
-            alt="Fluid System Logo"
-          />
+          <img className="fs--logo" src={logo} alt="Fluid System Logo" />
         </Link>
         {title && <h1>{title}</h1>}{" "}
-        {/* Muestra el h1 solo si title está presente */}
       </div>
       <div>
         {user ? (
@@ -50,10 +51,5 @@ Header.propTypes = {
   onLogin: PropTypes.func.isRequired,
   onLogout: PropTypes.func.isRequired,
   onCreateAccount: PropTypes.func.isRequired,
-  title: PropTypes.string, // Prop opcional para el título
-};
-
-Header.defaultProps = {
-  user: null,
-  title: "", // Valor por defecto para el título
+  title: PropTypes.string,
 };

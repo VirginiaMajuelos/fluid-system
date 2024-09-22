@@ -5,8 +5,8 @@
   padding: var(--spacing-4);
   overflow: hidden;
   color: black;
-  margin: var(--spacing-4);
-  display: inline-block; /* Ajusta la card al tamaño del contenido */
+  display: flex;
+  flex-direction: column;
   min-width: 200px; /* Tamaño mínimo para cada card */
   min-height: 150px; /* Tamaño mínimo para cada card */
 }

@@ -1,4 +1,6 @@
-import "../src/styles/global.css"; // Ajusta la ruta según la ubicación de tu archivo global.css
+import "../src/styles/global.css";
+import "../src/styles/variables.css";
+import "../src/styles/reset.css";
 
 /** @type { import('@storybook/react').Preview } */
 const preview = {
@@ -10,13 +12,17 @@ const preview = {
       },
     },
     backgrounds: {
-      default: "light", // Puedes usar un nombre predefinido o personalizar
+      default: "light", //  nombre predefinido o personalizar
       values: [
         { name: "light", value: "#f2f2f2" },
-        { name: "dark", value: "#333" }, // Opcional: añadir un fondo oscuro para pruebas
+        { name: "dark", value: "#333" },
       ],
     },
-    // Otros parámetros globales, si es necesario
+
+    fontSize: {
+      default: "font-family",
+      value: "Quicksand",
+    },
   },
 };
 

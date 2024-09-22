@@ -1,11 +1,13 @@
 [
   {
     "id": "button",
-    "title": "Button Component",
+    "title": "Button",
     "description": "This is a button component used for triggering actions.",
     "code": "<Button variant=\"primary\">Click Me</Button>",
     "component": "<Button />",
     "componentName": "Button",
+    "typeStory": "atoms",
+    "image": "../assets/Button.jpg",
     "props": {
       "variant": "warning",
       "children": "Click Me"
@@ -22,15 +24,27 @@
   },
   {
     "id": "card",
-    "title": "Card Component",
+    "title": "Card",
     "description": "This is a card component used for displaying content.",
     "code": "<Card size=\"large\">This is a card</Card>",
     "component": "<Card />",
     "componentName": "Card",
+    "image": "/assets/Card.jpg",
+    "typeStory": "atoms",
     "props": {
       "size": "large",
       "children": "This is a card"
     }
+  },
+  {
+    "id": "modal",
+    "title": "Modal",
+    "description": "This is a modal component used for triggering actions.",
+    "code": "<Modal show=\"false\">This is a modal</Modal>",
+    "component": "<Modal />",
+    "componentName": "Modal",
+    "image": "/assets/Modal.jpg",
+    "typeStory": "molecules"
   },
   {
     "id": "componente-1",
@@ -38,7 +52,9 @@
     "description": "This is a button component used for triggering actions.",
     "code": "<Button variant=\"primary\">Click Me</Button>",
     "component": "<Button />",
-    "componentName": "Button"
+    "componentName": "Button",
+    "image": "/assets/Button.jpg",
+    "typeStory": "atoms"
   },
   {
     "id": "componente-2",
@@ -46,7 +62,9 @@
     "description": "This is a card component used for displaying content.",
     "code": "<Card size=\"large\">This is a card</Card>",
     "component": "<Card />",
-    "componentName": "Button"
+    "componentName": "Button",
+    "image": "/assets/Button.jpg",
+    "typeStory": "atoms"
   },
   {
     "id": "componente-3",
@@ -54,7 +72,9 @@
     "description": "This is a button component used for triggering actions.",
     "code": "<Button variant=\"primary\">Click Me</Button>",
     "component": "<Button />",
-    "componentName": "Button"
+    "componentName": "Button",
+    "image": "/assets/Button.jpg",
+    "typeStory": "Atoms"
   },
   {
     "id": "componente-4",
@@ -62,6 +82,8 @@
     "description": "This is a card component used for displaying content.",
     "code": "<Card size=\"large\">This is a card</Card>",
     "component": "<Card />",
-    "componentName": "Button"
+    "componentName": "Button",
+    "image": "/assets/Button.jpg",
+    "typeStory": "atoms"
   }
 ]

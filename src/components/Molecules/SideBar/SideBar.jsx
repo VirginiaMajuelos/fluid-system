@@ -10,7 +10,9 @@ const SideBar = () => {
       aria-label="Sidebar de navegación de componentes"
     >
       <nav className="fs-sidebar__menu" role="navigation">
-        <p className="fs-txt-light">Componentes</p>
+        <Link to={"/components"}>
+          <p className="fs-txt-light">Componentes</p>
+        </Link>
         <ul>
           {componentsData.map((componentItem) => (
             <li key={componentItem.id}>

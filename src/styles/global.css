@@ -249,6 +249,12 @@ body {
 .fs--p12 {
   padding: var(--spacing-12);
 }
+.fs--p13 {
+  padding: var(--spacing-13);
+}
+.fs--p14 {
+  padding: var(--spacing-14);
+}
 
 .fs--logo {
   width: 40px; /* Ajusta el tamaño del logo */
@@ -271,13 +277,17 @@ body {
   border-top: 1px solid var(--border-color); /* Usar el color de borde ya definido */
 }
 
+.fs--cursor {
+  cursor: pointer;
+}
+
 .fs--code {
   margin: var(--spacing-4) auto;
   background-color: var(--basic-light);
   color: var(--basic-dark);
   padding: var(--spacing-2);
   border-radius: 5px;
-  width: 340px;
+  width: auto;
   display: flex;
   justify-content: space-between; /* Distribuye el contenido entre los extremos */
   align-items: center;
