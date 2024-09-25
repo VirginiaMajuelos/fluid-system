@@ -1,7 +1,7 @@
 .fs--inputSearch {
-  width: 100%;
+  width: auto;
   padding: 5px;
-  border: 2px solid #ccc;
+  border: 2px solid var(--secondary);
   border-radius: 4px;
   font-size: 16px;
   transition: border-color 0.3s ease;
@@ -9,7 +9,7 @@
 }
 
 .fs--inputSearch:focus {
-  border-color: #007bff; /* Cambia el color del borde al enfocar */
+  border-color: var(--tertiary); /* Cambia el color del borde al enfocar */
   outline: none; /* Elimina el outline por defecto */
 }
 

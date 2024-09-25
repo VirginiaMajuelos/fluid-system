@@ -1,15 +1,15 @@
-import React, { useEffect, useState, useCallback } from "react";
+import React, { useEffect, useState } from "react";
 import SideBar from "../components/Molecules/SideBar/SideBar";
 import components from "../Mocks/componentsData.json";
 import { Card } from "../components/Atoms/Card/Card";
 import { Link } from "react-router-dom";
-import debounce from "lodash/debounce";
+import { InputSearch } from "../components/Atoms/InputSearch/InputSearch";
 import "./ComponentsPage.css";
 
 const ComponentsPage = () => {
   const [images, setImages] = useState({});
-  const [search, setSearch] = useState("");
   const [searchText, setSearchText] = useState("");
+  //          image: await import(`../assets/${item.image.split("/").pop()}`),
 
   useEffect(() => {
     const importImages = async () => {
@@ -28,36 +28,20 @@ const ComponentsPage = () => {
     importImages();
   }, []);
 
-  const handleSearchChange = useCallback(
-    debounce((value) => {
-      console.log("render");
-      setSearchText(value);
-    }, 300),
-    [] // 300ms de delay
+  const filteredComponents = components.filter((item) =>
+    item.componentName.toLowerCase().includes(searchText.toLowerCase())
   );
 
-  const handleChange = (e) => {
-    const newSearch = e.target.value;
-    setSearch(newSearch);
-    handleSearchChange(newSearch); // Llama a la función de debounce
+  const handleSearchChange = (value) => {
+    setSearchText(value);
   };
 
-  const filteredComponents = components.filter((item) =>
-    item.componentName.toLowerCase().includes(search.toLowerCase())
-  );
   return (
     <>
       <SideBar />
       <section className="fs--section">
         <h1 className="fs-txt-light">Componentes</h1>
-        <form>
-          <input
-            type="text"
-            placeholder="Search"
-            onChange={handleChange}
-            value={search}
-          />
-        </form>
+        <InputSearch onSearchChange={handleSearchChange} />
         <div className="fs--content-grid">
           {filteredComponents.map((item) => (
             <div key={item.id}>
@@ -67,7 +51,7 @@ const ComponentsPage = () => {
                   <img
                     src={images[item.id]}
                     alt={item.componentName}
-                    className="fs--cursor"
+                    className="fs--cursor fs--img-components"
                   />
                 </Card>
               </Link>

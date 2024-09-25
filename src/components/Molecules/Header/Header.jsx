@@ -14,9 +14,12 @@ export const Header = ({
 }) => (
   <header>
     <div className="fs-header">
-      <div>
+      <div className="fs--flex">
         <Link to="/">
           <img className="fs--logo" src={logo} alt="Fluid System Logo" />
+        </Link>
+        <Link to="/components" className="fs--body fs--link">
+          Components
         </Link>
         {title && <h1>{title}</h1>}{" "}
       </div>

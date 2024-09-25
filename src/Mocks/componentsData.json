@@ -7,17 +7,17 @@
     "component": "<Button />",
     "componentName": "Button",
     "typeStory": "atoms",
-    "image": "../assets/Button.jpg",
+    "image": "/assets/Button.jpg",
     "props": {
       "variant": "warning",
       "children": "Click Me"
     },
-    "variableOne": "Modificador color:",
+    "variableOne": "Color modifier:",
     "items": [
       { "variant": "variant='mosaic'" },
       { "variant": "variant='primary'" },
       { "variant": "variant='secondary'" },
-      { "variant": "variant='sucess'" },
+      { "variant": "variant='success'" },
       { "variant": "variant='danger'" },
       { "variant": "variant='warning'" }
     ]
@@ -29,61 +29,142 @@
     "code": "<Card size=\"large\">This is a card</Card>",
     "component": "<Card />",
     "componentName": "Card",
-    "image": "/assets/Card.jpg",
     "typeStory": "atoms",
+    "image": "/assets/Card.jpg",
     "props": {
       "size": "large",
       "children": "This is a card"
-    }
+    },
+    "variableOne": "Size modifier:",
+    "items": [
+      { "variant": "size='small'" },
+      { "variant": "size='medium'" },
+      { "variant": "size='large'" }
+    ]
   },
   {
     "id": "modal",
     "title": "Modal",
-    "description": "This is a modal component used for triggering actions.",
-    "code": "<Modal show=\"false\">This is a modal</Modal>",
+    "description": "This is a modal component used to display overlay content.",
+    "code": "<Modal show={false} onClose={() => {}}>This is a modal</Modal>",
     "component": "<Modal />",
     "componentName": "Modal",
+    "typeStory": "molecules",
     "image": "/assets/Modal.jpg",
-    "typeStory": "molecules"
+    "props": {
+      "show": false,
+      "onClose": "Function",
+      "children": "This is a modal"
+    },
+    "variableOne": "Visibility modifier:",
+    "items": [{ "variant": "show={true}" }, { "variant": "show={false}" }]
   },
   {
-    "id": "componente-1",
-    "title": "Component 1",
-    "description": "This is a button component used for triggering actions.",
-    "code": "<Button variant=\"primary\">Click Me</Button>",
-    "component": "<Button />",
-    "componentName": "Button",
-    "image": "/assets/Button.jpg",
-    "typeStory": "atoms"
+    "id": "spinner",
+    "title": "Spinner",
+    "description": "This is a spinner component used for loading states.",
+    "code": "<Spinner variant=\"circle\" color=\"secondary\" size=\"large\" />",
+    "component": "<Spinner />",
+    "componentName": "Spinner",
+    "typeStory": "atoms",
+    "image": "/assets/Spinner.png",
+    "props": {
+      "variant": "circle",
+      "size": "large",
+      "color": "secondary"
+    },
+    "variableOne": "Loading style modifier:",
+    "items": [
+      { "variant": "variant='dots'" },
+      { "variant": "variant='circle'" },
+      { "variant": "size='medium'" },
+      { "variant": "size='large'" },
+      { "variant": "color='primary'" },
+      { "variant": "color='secondary'" },
+      { "variant": "color='tertiary'" }
+    ]
   },
   {
-    "id": "componente-2",
-    "title": "Component 2",
-    "description": "This is a card component used for displaying content.",
-    "code": "<Card size=\"large\">This is a card</Card>",
-    "component": "<Card />",
-    "componentName": "Button",
-    "image": "/assets/Button.jpg",
-    "typeStory": "atoms"
+    "id": "pillIcon",
+    "title": "Pill Icon",
+    "description": "This is a pill component with icon, useful for statuses.",
+    "code": "<PillIcon status=\"warning\" shape=\"square\" showIcon={true} backgroundColor=\"#ffa100\" fontColor=\"#fff\" />",
+    "component": "<PillIcon />",
+    "componentName": "PillIcon",
+    "typeStory": "atoms",
+    "image": "/assets/PillIcon.png",
+    "props": {
+      "status": "warning",
+      "shape": "square",
+      "showIcon": true,
+      "backgroundColor": "#ffa100",
+      "fontColor": "#fff"
+    },
+    "variableOne": "Status and shape modifiers:",
+    "items": [
+      { "variant": "status='correct'" },
+      { "variant": "status='warning'" },
+      { "variant": "status='alert'" },
+      { "variant": "shape='circle'" },
+      { "variant": "shape='square'" }
+    ]
   },
   {
-    "id": "componente-3",
-    "title": "Componente 3",
-    "description": "This is a button component used for triggering actions.",
-    "code": "<Button variant=\"primary\">Click Me</Button>",
-    "component": "<Button />",
-    "componentName": "Button",
-    "image": "/assets/Button.jpg",
-    "typeStory": "Atoms"
+    "id": "pillText",
+    "title": "Pill Text",
+    "description": "This is a pill component for displaying status text with a colored background.",
+    "code": "<PillText status=\"primary\">Status</PillText> ",
+    "component": "<PillText />  ",
+    "componentName": "PillText",
+    "typeStory": "atoms",
+    "image": "/assets/PillText.png",
+    "props": {
+      "status": "primary",
+      "children": "Status"
+    },
+    "variableOne": "Status modifier:",
+    "items": [
+      { "variant": "status='primary'" },
+      { "variant": "status='secondary'" },
+      { "variant": "status='tertiary'" }
+    ]
   },
   {
-    "id": "componente-4",
-    "title": "Componente 4",
-    "description": "This is a card component used for displaying content.",
-    "code": "<Card size=\"large\">This is a card</Card>",
-    "component": "<Card />",
-    "componentName": "Button",
-    "image": "/assets/Button.jpg",
-    "typeStory": "atoms"
+    "id": "accordion",
+    "title": "Accordion",
+    "description": "This is an accordion component to show collapsible content.",
+    "code": "<Accordion variant=\"inverse\" />",
+    "component": "<Accordion />",
+    "componentName": "Accordion",
+    "typeStory": "molecules",
+    "image": "/assets/Accordion.png",
+    "props": {
+      "variant": "inverse",
+      "children": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    "variableOne": "Appearance modifier:",
+    "items": [
+      { "variant": "variant='light'" },
+      { "variant": "variant='inverse'" }
+    ]
+  },
+  {
+    "id": "inputSearch",
+    "title": "Input Search",
+    "description": "This is a search input component with debounce functionality.",
+    "code": "<InputSearch onSearchChange={handleSearchChange} labelColor=\"fs-txt-light\" />",
+    "component": "<InputSearch />",
+    "componentName": "InputSearch",
+    "typeStory": "atoms",
+    "image": "../assets/InputSearch.jpg",
+    "props": {
+      "onSearchChange": "Function",
+      "labelColor": "fs-txt-light"
+    },
+    "variableOne": "Label color modifier:",
+    "items": [
+      { "variant": "labelColor='fs-txt-light'" },
+      { "variant": "labelColor='fs-txt-dark'" }
+    ]
   }
 ]

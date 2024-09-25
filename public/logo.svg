@@ -1,0 +1,8 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="100" cy="100" r="90" fill="#ffa294" stroke="none" stroke-width="10"/>
+  
+  <!-- Texto "FS" estilizado con Quicksand -->
+  <text x="50%" y="50%" font-family="'Quicksand', sans-serif" font-size="80" font-weight="500" fill="#f4f4f4" text-anchor="middle" dominant-baseline="central">
+    FS
+  </text>
+</svg>

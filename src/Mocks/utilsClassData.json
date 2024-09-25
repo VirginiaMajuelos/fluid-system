@@ -1,0 +1,163 @@
+[
+  {
+    "id": "spacing",
+    "title": "Spacing",
+    "description": "This class applies a small spacing of 8px.",
+    "variableOne": "Status modifier:",
+    "items": [
+      { "variant": "--spacing-1: 0.25rem" },
+      { "variant": "--spacing-2: 0.5rem" },
+      { "variant": "--spacing-3: 0.75rem" },
+      { "variant": "--spacing-4: 1rem" },
+      { "variant": "--spacing-5: 1.25rem" },
+      { "variant": "--spacing-6: 1.5rem" },
+      { "variant": "--spacing-7: 2rem" },
+      { "variant": "--spacing-8: 2.5rem" },
+      { "variant": "--spacing-9: 3rem" },
+      { "variant": "--spacing-10: 3.5rem" },
+      { "variant": "--spacing-11: 4rem" },
+      { "variant": "--spacing-12: 5rem" },
+      { "variant": "--spacing-13: 6rem" },
+      { "variant": "--spacing-14: 7rem" }
+    ]
+  },
+  {
+    "id": "font-size",
+    "title": "Font Size",
+    "description": "This class applies various font sizes for different screen sizes.",
+    "variableOne": "Font sizes:",
+    "items": [
+      { "variant": "--font-size-h1-mobile: 32px" },
+      { "variant": "--font-size-h1-tablet: 56px" },
+      { "variant": "--font-size-h1-desktop: 64px" },
+      { "variant": "--font-size-h2-mobile: 28px" },
+      { "variant": "--font-size-h2-tablet: 40px" },
+      { "variant": "--font-size-h2-desktop: 56px" },
+      { "variant": "--font-size-h3-mobile: 24px" },
+      { "variant": "--font-size-h3-tablet: 34px" },
+      { "variant": "--font-size-h3-desktop: 40px" },
+      { "variant": "--font-size-h4-mobile: 20px" },
+      { "variant": "--font-size-h4-tablet: 24px" },
+      { "variant": "--font-size-h4-desktop: 28px" },
+      { "variant": "--font-size-h5-mobile: 18px" },
+      { "variant": "--font-size-h5-tablet: 20px" },
+      { "variant": "--font-size-h5-desktop: 20px" },
+      { "variant": "--font-size-body-mobile: 16px" },
+      { "variant": "--font-size-body-tablet: 18px" },
+      { "variant": "--font-size-body-desktop: 18px" },
+      { "variant": "--font-size-footnote: 14px" }
+    ]
+  },
+  {
+    "id": "colors",
+    "title": "Colors",
+    "description": "This class applies various color variables for theming.",
+    "variableOne": "Color variables:",
+    "items": [
+      { "variant": "--primary: #ffa294" },
+      { "variant": "--secondary: #a3a3f9" },
+      { "variant": "--tertiary: #545fe7" },
+      { "variant": "--basic-dark: #151321" },
+      { "variant": "--basic-light: #f4f4f4" },
+      { "variant": "--bg-dark: #151321" },
+      { "variant": "--bg-light: #ffffff" }
+    ]
+  },
+  {
+    "id": "typography",
+    "title": "Typography - Headings",
+    "description": "This section defines typography styles for headings and body text.",
+    "variableOne": "Font sizes for different breakpoints:",
+    "items": {
+      "mobile": [
+        { "variant": "--font-size-h1: var(--font-size-h1-mobile)" },
+        { "variant": "--font-size-h2: var(--font-size-h2-mobile)" },
+        { "variant": "--font-size-h3: var(--font-size-h3-mobile)" },
+        { "variant": "--font-size-h4: var(--font-size-h4-mobile)" },
+        { "variant": "--font-size-h5: var(--font-size-h5-mobile)" },
+        { "variant": "--font-size-body: var(--font-size-body-mobile)" },
+        { "variant": "--font-size-footnote: var(--font-size-footnote)" }
+      ],
+      "tablet": [
+        { "variant": "--font-size-h1: var(--font-size-h1-tablet)" },
+        { "variant": "--font-size-h2: var(--font-size-h2-tablet)" },
+        { "variant": "--font-size-h3: var(--font-size-h3-tablet)" },
+        { "variant": "--font-size-h4: var(--font-size-h4-tablet)" },
+        { "variant": "--font-size-h5: var(--font-size-h5-tablet)" },
+        { "variant": "--font-size-body: var(--font-size-body-tablet)" }
+      ],
+      "desktop": [
+        { "variant": "--font-size-h1: var(--font-size-h1-desktop)" },
+        { "variant": "--font-size-h2: var(--font-size-h2-desktop)" },
+        { "variant": "--font-size-h3: var(--font-size-h3-desktop)" },
+        { "variant": "--font-size-h4: var(--font-size-h4-desktop)" },
+        { "variant": "--font-size-h5: var(--font-size-h5-desktop)" },
+        { "variant": "--font-size-body: var(--font-size-body-desktop)" }
+      ]
+    }
+  },
+  {
+    "id": "text-colors",
+    "title": "Text Colors",
+    "description": "This section defines the color styles for text elements.",
+    "variableOne": "Text color classes:",
+    "items": [
+      { "variant": "--txt-primary: var(--primary)" },
+      { "variant": "--txt-secondary: var(--secondary)" },
+      { "variant": "--txt-tertiary: var(--tertiary)" },
+      { "variant": "--txt-dark: var(--basic-dark)" },
+      { "variant": "--txt-light: var(--basic-light)" },
+      { "variant": "--txt-center: text-align: center" }
+    ]
+  },
+  {
+    "id": "link",
+    "title": "Link Styles",
+    "description": "Styles for links.",
+    "variableOne": "Link styles:",
+    "items": [
+      { "variant": "--link: text-decoration: none" },
+      { "variant": "--link-hover: cursor: pointer; text-decoration: underline" }
+    ]
+  },
+  {
+    "id": "divider",
+    "title": "Divider Styles",
+    "description": "Styles for dividers.",
+    "variableOne": "Divider styles:",
+    "items": [
+      {
+        "variant": "--divider: width: 100%; margin: var(--spacing-6) 0; border-top: 1px solid var(--border-color)"
+      }
+    ]
+  },
+  {
+    "id": "cursor",
+    "title": "Cursor Styles",
+    "description": "Styles for cursor.",
+    "variableOne": "Cursor styles:",
+    "items": [{ "variant": "--cursor: cursor: pointer" }]
+  },
+  {
+    "id": "flex",
+    "title": "Flexbox Styles",
+    "description": "Flexbox utility styles.",
+    "variableOne": "Flexbox styles:",
+    "items": [
+      {
+        "variant": "--flex: display: flex; flex-direction: row; justify-content: space-evenly; gap: 1rem; align-items: center"
+      }
+    ]
+  },
+  {
+    "id": "section",
+    "title": "Section Styles",
+    "description": "Styles for sections with sidebar adjustment.",
+    "variableOne": "Section styles:",
+    "items": [
+      {
+        "variant": "--section: margin-left: 220px; display: inline-block; justify-content: flex-start; align-items: flex-start; width: calc(100% - 220px); height: 100vh; padding: var(--spacing-5); padding-top: 120px; overflow-y: auto"
+      }
+    ]
+  }
+]

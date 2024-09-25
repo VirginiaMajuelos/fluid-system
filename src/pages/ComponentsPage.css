@@ -1,18 +1,8 @@
-.fs--section {
-  margin-left: 220px; /* Espacio para el SideBar */
-  display: inline-block;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: calc(100% - 220px); /* Ajustar ancho considerando el SideBar */
-  min-height: 100vh; /* Permitir crecimiento */
-  padding: var(--spacing-5);
-  padding-top: 120px;
-  overflow-y: auto;
-}
 
 .fs--content-grid {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
   width: 100%;
   gap: 1rem;
@@ -26,7 +16,7 @@
   margin-bottom: 20px; /* Espacio adicional si es necesario */
 }
 
-img {
+.fs--img-components {
   width: 250px; /* Ajustar la imagen al ancho de la tarjeta */
   height: 150px; /* Altura fija para todas las imágenes */
   object-fit: cover; /* Ajustar la imagen para cubrir el espacio sin distorsión */

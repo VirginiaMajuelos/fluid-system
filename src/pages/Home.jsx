@@ -28,33 +28,35 @@ const Home = () => {
             build fast and awesome websites from scratch with easy to use
             Components.
           </p>
-          <h3 className="fs-h4 fs-txt-light fs--m2 fs-txt-center">
-            ¿Are you ready?
-          </h3>
-          <img src={imgHome} alt="image home" width="350px" />
+          <div className="fs-txt-center fs--m3">
+            <h3 className="fs-h4 fs-txt-light fs--m3">¿Are you ready?</h3>
+            <Button variant="mosaic">
+              <Link to="/components">Get Started</Link>
+            </Button>
+          </div>
+          <img src={imgHome} alt="image home" width="450px" />
+
           <article className="fs--m2 fs--p2">
             <p className="fs--body fs-txt-light fs--m4">
               Fluid System is a cutting-edge, lightweight, and highly flexible
               CSS framework tailored for the development of responsive and
               visually captivating web applications. Designed with modern web
               standards in mind, Fluid System empowers developers to create
-              stunning user interfaces with ease. Our framework offers a
-              comprehensive collection of robust components and utility classes
-              that streamline the development process, enabling you to build
-              applications faster and with greater efficiency. Whether you’re
-              crafting a sleek landing page or a complex web application, Fluid
-              System provides the essential tools you need to enhance your
-              workflow and elevate the quality of your projects. With an
-              emphasis on flexibility, Fluid System allows for seamless
-              customization, ensuring that your designs stand out while
-              maintaining optimal performance across various devices and screen
-              sizes.
+              stunning user interfaces with ease.
             </p>
-            <div className="fs-txt-center">
-              <Button variant="mosaic">
-                <Link to="/components">Get Started</Link>
-              </Button>
-            </div>
+
+            <p className="fs--body fs-txt-light fs--m4">
+              Our framework offers a comprehensive collection of robust
+              components and utility classes that streamline the development
+              process, enabling you to build applications faster and with
+              greater efficiency. Whether you’re crafting a sleek landing page
+              or a complex web application, Fluid System provides the essential
+              tools you need to enhance your workflow and elevate the quality of
+              your projects. With an emphasis on flexibility, Fluid System
+              allows for seamless customization, ensuring that your designs
+              stand out while maintaining optimal performance across various
+              devices and screen sizes.
+            </p>
 
             <p className="fs--body fs-txt-secondary fs--m4">
               To start using Fluid System, simply include our CSS file in your

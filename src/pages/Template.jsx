@@ -37,7 +37,7 @@ const Template = () => {
       <SideBar />
       <section className="fs-template fs-txt-light">
         <h2 className="fs-h2">{component.title}</h2>
-        <p className="fs--body">{component.description}</p>
+        <p className="fs-template__description">{component.description}</p>
         <DynamicComponent {...component.props} />
 
         {/* Lógica específica para el modal */}
@@ -79,9 +79,7 @@ const Template = () => {
           <ul>
             {component.items.map((item, index) => (
               <li key={index}>
-                <p>
-                  <code>{item.variant}</code>
-                </p>
+                <CodeSnippet code={item.variant}></CodeSnippet>
               </li>
             ))}
           </ul>

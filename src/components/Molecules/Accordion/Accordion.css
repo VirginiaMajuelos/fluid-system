@@ -1,0 +1,53 @@
+.fs-accordion {
+  border-radius: 15px;
+}
+
+.fs-accordion--light {
+  background: var(--bg-light);
+  color: var(--basic-dark);
+}
+
+.fs-accordion--inverse {
+  background: var(--bg-dark);
+  color: var(--basic-light);
+}
+
+.fs-accordion--header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--bg-light);
+  padding: 0.75rem;
+  cursor: pointer;
+  border-radius: 15px 15px 0 0;
+}
+
+.fs-accordion--icon {
+  font-size: 1.5rem;
+  margin: 3px;
+  transition: transform 0.5s ease-in-out;
+}
+.fs-accordion--icon:hover {
+  color: var(--secondary);
+}
+
+.fs-accordion--icon__rotate {
+  transform: rotate(180deg);
+}
+
+.fs--accordion-body {
+  border: 1px solid var(--bg-light);
+  height: 0;
+  opacity: 0;
+  transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  overflow: hidden;
+  border-radius: 0 0 15px 15px;
+}
+
+.fs--accordion-body__show {
+  height: auto;
+  opacity: 1;
+  padding: 1rem;
+  border-radius: 0 0 15px 15px;
+}

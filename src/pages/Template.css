@@ -5,10 +5,11 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 100%;
+  width: 515px;
   height: 100vh;
   padding: var(--spacing-5); /* Espacio alrededor del contenido */
   padding-top: 120px;
+  text-align: justify;
 }
 
 .fs-template__description {
