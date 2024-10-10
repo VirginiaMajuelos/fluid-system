@@ -152,19 +152,19 @@
     "id": "inputSearch",
     "title": "Input Search",
     "description": "This is a search input component with debounce functionality.",
-    "code": "<InputSearch onSearchChange={handleSearchChange} labelColor=\"fs-txt-light\" />",
+    "code": "<InputSearch onSearchChange={handleSearchChange} labelColor=\"fs-txt--light\" />",
     "component": "<InputSearch />",
     "componentName": "InputSearch",
     "typeStory": "atoms",
     "image": "../assets/InputSearch.jpg",
     "props": {
       "onSearchChange": "Function",
-      "labelColor": "fs-txt-light"
+      "labelColor": "fs-txt--light"
     },
     "variableOne": "Label color modifier:",
     "items": [
-      { "variant": "labelColor='fs-txt-light'" },
-      { "variant": "labelColor='fs-txt-dark'" }
+      { "variant": "labelColor='fs-txt--light'" },
+      { "variant": "labelColor='fs-txt--dark'" }
     ]
   }
 ]

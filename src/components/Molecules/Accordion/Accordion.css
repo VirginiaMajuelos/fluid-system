@@ -3,13 +3,13 @@
 }
 
 .fs-accordion--light {
-  background: var(--bg-light);
+  background: var(--basic-white);
   color: var(--basic-dark);
 }
 
 .fs-accordion--inverse {
   background: var(--bg-dark);
-  color: var(--basic-light);
+  color: var(--basic-white);
 }
 
 .fs-accordion--header {
@@ -17,7 +17,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid var(--bg-light);
+  border: 1px solid var(--basic-white);
   padding: 0.75rem;
   cursor: pointer;
   border-radius: 15px 15px 0 0;
@@ -36,8 +36,8 @@
   transform: rotate(180deg);
 }
 
-.fs--accordion-body {
-  border: 1px solid var(--bg-light);
+.fs-accordion-body {
+  border: 1px solid var(--basic-white);
   height: 0;
   opacity: 0;
   transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out;
@@ -45,7 +45,7 @@
   border-radius: 0 0 15px 15px;
 }
 
-.fs--accordion-body__show {
+.fs-accordion-body__show {
   height: auto;
   opacity: 1;
   padding: 1rem;

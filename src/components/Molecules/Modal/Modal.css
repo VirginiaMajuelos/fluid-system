@@ -1,5 +1,4 @@
-/* Modal.css */
-.fs--modal-overlay {
+.fs-modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -13,7 +12,7 @@
   color: black;
 }
 
-.fs--modal-content {
+.fs-modal-content {
   background: white;
   padding: 20px;
   border-radius: 8px;
@@ -23,7 +22,7 @@
   position: relative;
 }
 
-.fs--modal-close {
+.fs-modal-close {
   position: absolute;
   top: 10px;
   right: 10px;

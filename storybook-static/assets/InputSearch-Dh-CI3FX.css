@@ -1,0 +1,1 @@
+.fs-inputSearch{width:auto;padding:5px;border:2px solid var(--secondary);border-radius:4px;font-size:16px;transition:border-color .3s ease;margin:10px}.fs-inputSearch:focus{border-color:var(--tertiary);outline:none}.fs-inputSearch::placeholder{color:#999;opacity:1}.fs-inputSearch:focus::placeholder{color:transparent}

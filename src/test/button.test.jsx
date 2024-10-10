@@ -1,8 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { describe, it, expect } from "vitest";
-import { Button } from "../components/Atoms/Button/Button";
+import { Button } from "@atoms/Button/Button";
 
-// Definimos las variantes de los botones que queremos testear
 const buttonVariants = [
   {
     children: "Primary Button",
@@ -39,7 +38,6 @@ const buttonVariants = [
 describe("Button Component Variants", () => {
   buttonVariants.forEach(({ children, variant, size, backgroundColor }) => {
     it(`should render a ${variant} button with size ${size}`, () => {
-      // Renderizamos el botón con sus props dinámicas
       render(
         <Button size={size} variant={variant} backgroundColor={backgroundColor}>
           {children}
@@ -47,19 +45,10 @@ describe("Button Component Variants", () => {
       );
 
       const button = screen.getByText(children);
-
-      // Verifica que el texto se renderiza correctamente
       expect(button).toBeInTheDocument();
-
-      // Verifica que el botón tiene las clases correspondientes
       expect(button).toHaveClass(`fs-button--${size}`);
       expect(button).toHaveClass(`fs-button--${variant}`);
-
-      // Verifica que el color de fondo es el esperado
       expect(button).toHaveStyle({ backgroundColor });
-
-      // Imprime el botón para inspeccionar sus propiedades
-      console.log(button);
     });
   });
 });

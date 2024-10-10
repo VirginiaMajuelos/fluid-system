@@ -1,4 +1,4 @@
-.fs--inputSearch {
+.fs-inputSearch {
   width: auto;
   padding: 5px;
   border: 2px solid var(--secondary);
@@ -8,16 +8,16 @@
   margin: 10px;
 }
 
-.fs--inputSearch:focus {
-  border-color: var(--tertiary); /* Cambia el color del borde al enfocar */
-  outline: none; /* Elimina el outline por defecto */
+.fs-inputSearch:focus {
+  border-color: var(--tertiary);
+  outline: none;
 }
 
-.fs--inputSearch::placeholder {
-  color: #999; /* Color del texto del placeholder */
-  opacity: 1; /* Asegúrate de que el placeholder sea completamente visible */
+.fs-inputSearch::placeholder {
+  color: #999;
+  opacity: 1;
 }
 
-.fs--inputSearch:focus::placeholder {
-  color: transparent; /* Oculta el placeholder al enfocar */
+.fs-inputSearch:focus::placeholder {
+  color: transparent;
 }

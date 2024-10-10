@@ -1,0 +1,11 @@
+.fs-footer {
+  width: 100%;
+}
+
+.fs-footer__copyright {
+  background-color: var(--basic-dark);
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

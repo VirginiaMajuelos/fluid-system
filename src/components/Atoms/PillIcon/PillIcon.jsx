@@ -1,4 +1,3 @@
-// PillIcon.jsx
 import React from "react";
 import PropTypes from "prop-types";
 import { AiOutlineCheck, AiOutlineWarning } from "react-icons/ai";
@@ -38,7 +37,7 @@ export const PillIcon = ({
 
   return (
     <span
-      className={`fs--icon fs--icon--${status} fs--icon--${shape}`}
+      className={`fs-icon fs-icon--${status} fs-icon--${shape}`}
       style={{
         ...pillIconStyle,
         backgroundColor: bgColor[status],

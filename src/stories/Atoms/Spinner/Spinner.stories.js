@@ -1,13 +1,11 @@
-import React from "react";
-import { Spinner } from "../../../components/Atoms/Spinner/Spinner.jsx";
+import { Spinner } from "@atoms/Spinner/Spinner.jsx";
 
 export default {
   title: "Atoms/Spinner",
   component: Spinner,
   parameters: {
-    layout: "centered", // Centra el componente en la vista de Storybook
+    layout: "centered",
   },
-  // Controladores para cambiar valores en el panel de Storybook
   argTypes: {
     variant: {
       control: { type: "select" },
@@ -28,7 +26,6 @@ export default {
   tags: ["autodocs"],
 };
 
-// Story para mostrar el spinner en su variante 'dots'
 export const Dots = {
   args: {
     variant: "dots",
@@ -37,7 +34,6 @@ export const Dots = {
   },
 };
 
-// Story para mostrar el spinner en su variante 'circle'
 export const Circle = {
   args: {
     variant: "circle",
@@ -46,7 +42,6 @@ export const Circle = {
   },
 };
 
-// Puedes agregar más stories para mostrar diferentes combinaciones
 export const LargeDots = {
   args: {
     variant: "dots",

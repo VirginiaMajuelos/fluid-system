@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@atoms/*": ["components/Atoms/*"],
+      "@molecules/*": ["components/Molecules/*"],
+      // "@context/*": ["context/*"],
+      "@mocks/*": ["Mocks/*"],
+      "@utils/*": ["utils/*"],
+      "@pages/*": ["pages/*"] // Asegúrate de que esto esté incluido
+    }
+  },
+  "include": ["src"]
+}

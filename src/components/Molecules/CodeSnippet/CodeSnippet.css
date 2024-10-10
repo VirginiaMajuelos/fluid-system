@@ -1,4 +1,4 @@
-.fs--code {
+.fs-code {
   margin: var(--spacing-4) auto;
   background-color: var(--basic-light);
   color: var(--basic-dark);
@@ -6,10 +6,10 @@
   border-radius: 5px;
   width: auto;
   display: flex;
-  justify-content: space-between; /* Distribuye el contenido entre los extremos */
+  justify-content: space-between; 
   align-items: center;
   text-align: center;
-  position: relative; /* Para la posición absoluta del botón */
+  position: relative; 
 }
 
 .copy-button {
@@ -25,7 +25,7 @@
 }
 
 .copy-button:hover {
-  background-color: var(--secondary); /* Cambia el color al pasar el cursor */
+  background-color: var(--secondary); 
 }
 
 .copy-success {

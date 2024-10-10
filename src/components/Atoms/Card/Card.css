@@ -7,30 +7,30 @@
   color: black;
   display: flex;
   flex-direction: column;
-  min-width: 200px; /* Tamaño mínimo para cada card */
-  min-height: 150px; /* Tamaño mínimo para cada card */
+  min-width: 200px;
+  min-height: 150px;
 }
 
 .fs-card--small {
   padding: 16px;
   font-size: 14px;
-  min-width: 200px; /* Tamaño mínimo */
-  min-height: 100px; /* Tamaño mínimo */
+  min-width: 200px;
+  min-height: 100px;
   text-align: left;
 }
 
 .fs-card--medium {
   padding: 16px;
   font-size: 16px;
-  min-width: 300px; /* Tamaño mínimo */
-  min-height: 200px; /* Tamaño mínimo */
+  min-width: 300px;
+  min-height: 200px;
   text-align: left;
 }
 
 .fs-card--large {
   padding: 24px;
   font-size: 18px;
-  min-width: 400px; /* Tamaño mínimo */
-  min-height: 300px; /* Tamaño mínimo */
+  min-width: 400px;
+  min-height: 300px;
   text-align: left;
 }

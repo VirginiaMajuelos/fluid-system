@@ -1,32 +1,16 @@
-import React, { useEffect, useState } from "react";
-import SideBar from "../components/Molecules/SideBar/SideBar";
-import components from "../Mocks/componentsData.json";
-import { Card } from "../components/Atoms/Card/Card";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { InputSearch } from "../components/Atoms/InputSearch/InputSearch";
+import { useSidebar } from "@context/SideBarContext";
+import { SideBar } from "@molecules/SideBar/SideBar";
+import components from "@mocks/componentsData.json";
+import { Card } from "@atoms/Card/Card";
+import { InputSearch } from "@atoms/InputSearch/InputSearch";
+import { imageMap } from "@utils/componentMap";
 import "./ComponentsPage.css";
 
-const ComponentsPage = () => {
-  const [images, setImages] = useState({});
+export const ComponentsPage = () => {
+  const { isSidebarOpen, closeSidebar } = useSidebar();
   const [searchText, setSearchText] = useState("");
-  //          image: await import(`../assets/${item.image.split("/").pop()}`),
-
-  useEffect(() => {
-    const importImages = async () => {
-      const imageModules = await Promise.all(
-        components.map(async (item) => ({
-          id: item.id,
-          image: await import(`../assets/${item.image.split("/").pop()}`),
-        }))
-      );
-      const imagesObject = imageModules.reduce((acc, curr) => {
-        acc[curr.id] = curr.image.default;
-        return acc;
-      }, {});
-      setImages(imagesObject);
-    };
-    importImages();
-  }, []);
 
   const filteredComponents = components.filter((item) =>
     item.componentName.toLowerCase().includes(searchText.toLowerCase())
@@ -38,20 +22,24 @@ const ComponentsPage = () => {
 
   return (
     <>
-      <SideBar />
-      <section className="fs--section">
-        <h1 className="fs-txt-light">Componentes</h1>
+      <SideBar isOpen={isSidebarOpen} closeSidebar={closeSidebar} />
+      <section className="fs-section">
+        <h1 className="fs-txt--light">Componentes</h1>
         <InputSearch onSearchChange={handleSearchChange} />
-        <div className="fs--content-grid">
+        <div className="fs-content-grid">
           {filteredComponents.map((item) => (
             <div key={item.id}>
-              <p className="fs-txt-light fs--m2">{item.componentName}</p>
-              <Link to={`/components/${item.id}`} className="fs--cursor">
-                <Card key={item.id}>
+              <p className="fs-txt--light fs-m2">{item.componentName}</p>
+              <Link
+                to={`/components/${item.id}`}
+                className="fs-cursor"
+                onClick={closeSidebar}
+              >
+                <Card>
                   <img
-                    src={images[item.id]}
+                    src={imageMap[item.componentName]}
                     alt={item.componentName}
-                    className="fs--cursor fs--img-components"
+                    className="fs-cursor fs-img-components"
                   />
                 </Card>
               </Link>
@@ -62,5 +50,3 @@ const ComponentsPage = () => {
     </>
   );
 };
-
-export default ComponentsPage;

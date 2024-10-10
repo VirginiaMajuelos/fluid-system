@@ -1,14 +1,11 @@
-/* Template.css */
-
 .fs-template {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 515px;
+  width: auto;
   height: 100vh;
-  padding: var(--spacing-5); /* Espacio alrededor del contenido */
-  padding-top: 120px;
+  padding: var(--spacing-5); 
   text-align: justify;
 }
 
@@ -22,15 +19,15 @@
 .fs-template__divider {
   width: 100%;
   margin: var(--spacing-6) 0;
-  border-top: 1px solid var(--border-color); /* Usar el color de borde ya definido */
+  border-top: 1px solid var(--border-color); 
 }
 
 .fs-template__link {
   display: inline-block;
   margin-top: var(--spacing-5);
   padding: var(--spacing-2) var(--spacing-4);
-  background-color: var(--primary); /* Usar el color de fondo primario */
-  color: var(--basic-dark); /* Usar el color de texto claro */
+  background-color: var(--primary); 
+  color: var(--basic-dark); 
   text-decoration: none;
   border-radius: var(--border-radius);
   font-weight: var(--font-weight-medium);
@@ -40,5 +37,5 @@
 .fs-template__link:hover {
   background-color: var(
     --primary-hover
-  ); /* Usar el color de fondo primario en hover */
+  ); 
 }

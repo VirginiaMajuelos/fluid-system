@@ -1,5 +1,5 @@
-import React, { useState } from "react"; // Asegúrate de importar React
-import { Accordion } from "../../components/Molecules/Accordion/Accordion";
+import React, { useState } from "react";
+import { Accordion } from "@molecules/Accordion/Accordion";
 
 export default {
   title: "Molecules/Accordion",
@@ -18,7 +18,7 @@ export default {
 };
 
 const Template = (args) => {
-  const [show, setShow] = useState(false); // Inicializa el estado del acordeón
+  const [show, setShow] = useState(false);
 
   const handleShow = () => {
     setShow((prev) => !prev);
@@ -33,7 +33,7 @@ const Template = (args) => {
 
 export const Default = Template.bind({});
 Default.args = {
-  variant: "light", // O "inverse" según lo que necesites
+  variant: "inverse",
   children:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry.", // Texto por defecto
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
 };

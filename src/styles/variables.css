@@ -2,14 +2,17 @@
 
 /* Colores */
 :root {
-  /* --primary: #c7ff65; */
   --primary: #ffa294;
   --secondary: #a3a3f9;
   --tertiary: #545fe7;
   --basic-dark: #151321;
   --basic-light: #f4f4f4;
+  --basic-white: #fff;
   --bg-dark: #151321;
-  --bg-light: #ffffff;
+  --bg-light: #eee6d3;
+  --success: #15be77;
+  --warning: #ffa100;
+  --alert: #ff005c;
 
   /* Tipografía */
   --font-family: "Quicksand", sans-serif;
@@ -25,7 +28,6 @@
 
   max-width: 1280px;
   margin: 0 auto;
-  /* padding: 2rem; */
   text-align: center;
 
   /* Fontsize */
@@ -45,13 +47,13 @@
   --font-size-h4-desktop: 28px;
   --font-size-h5-mobile: 18px;
   --font-size-h5-tablet: 20px;
-  --font-size-h5-desktop: 20px;
+  --font-size-h5-desktop: 24px;
   --font-size-body-mobile: 16px;
   --font-size-body-tablet: 18px;
   --font-size-body-desktop: 18px;
   --font-size-footnote: 14px;
 
-  /* spacing */
+  /* Spacing */
   --spacing-1: 0.25rem;
   --spacing-2: 0.5rem;
   --spacing-3: 0.75rem;

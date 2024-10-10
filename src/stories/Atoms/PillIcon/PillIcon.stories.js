@@ -1,5 +1,4 @@
-// PillIcon.stories.jsx
-import { PillIcon } from "../../../components/Atoms/PillIcon/PillIcon";
+import { PillIcon } from "@atoms/PillIcon/PillIcon";
 
 export default {
   title: "Atoms/PillIcon",

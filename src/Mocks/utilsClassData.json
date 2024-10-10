@@ -1,51 +1,137 @@
 [
   {
+    "id": "background",
+    "title": "Background",
+    "description": "Add color in your app with background-color.",
+    "variableOne": "Status modifier:",
+    "items": [
+      {
+        "variant": "fs-bg--primary",
+        "class": "fs-bg--primary fs-p2 fs-m1",
+        "title": "Primary Background",
+        "divider": true
+      },
+      {
+        "variant": "fs-bg--secondary",
+        "class": "fs-bg--secondary fs-p2 fs-m1",
+        "title": "Secondary Background",
+        "divider": true
+      },
+      {
+        "variant": "fs-bg--tertiary",
+        "class": "fs-bg--tertiary fs-p2 fs-m1 ",
+        "title": "tertiary Background",
+        "divider": true
+      },
+      {
+        "variant": "fs-bg--dark",
+        "class": "fs-bg--dark fs-p2 fs-m1 fs-border",
+        "title": "Dark Background",
+        "divider": true
+      },
+      {
+        "variant": "fs-bg--light",
+        "class": "fs-bg--light fs-p2 fs-m1 fs-txt--dark",
+        "title": "Light Background",
+        "divider": true
+      },
+      {
+        "variant": "fs-bg--success",
+        "class": "fs-bg--success fs-p2 fs-m1 fs-txt--dark",
+        "title": "Success Background",
+        "divider": true
+      },
+      {
+        "variant": "fs-bg--warning",
+        "class": "fs-bg--warning fs-p2 fs-m1 fs-txt--dark",
+        "title": "Warning Background",
+        "divider": true
+      },
+      {
+        "variant": "fs-bg--alert",
+        "class": "fs-bg--alert fs-p2 fs-m1 fs-txt--dark",
+        "title": "Alert Background",
+        "divider": true
+      }
+    ]
+  },
+  {
     "id": "spacing",
     "title": "Spacing",
     "description": "This class applies a small spacing of 8px.",
-    "variableOne": "Status modifier:",
+    "variableOne": "",
     "items": [
-      { "variant": "--spacing-1: 0.25rem" },
-      { "variant": "--spacing-2: 0.5rem" },
-      { "variant": "--spacing-3: 0.75rem" },
-      { "variant": "--spacing-4: 1rem" },
-      { "variant": "--spacing-5: 1.25rem" },
-      { "variant": "--spacing-6: 1.5rem" },
-      { "variant": "--spacing-7: 2rem" },
-      { "variant": "--spacing-8: 2.5rem" },
-      { "variant": "--spacing-9: 3rem" },
-      { "variant": "--spacing-10: 3.5rem" },
-      { "variant": "--spacing-11: 4rem" },
-      { "variant": "--spacing-12: 5rem" },
-      { "variant": "--spacing-13: 6rem" },
-      { "variant": "--spacing-14: 7rem" }
+      { "variant": "--spacing-1: 0.25rem", "divider": false },
+      { "variant": "--spacing-2: 0.5rem", "divider": false },
+      { "variant": "--spacing-3: 0.75rem", "divider": false },
+      { "variant": "--spacing-4: 1rem", "divider": false },
+      { "variant": "--spacing-5: 1.25rem", "divider": false },
+      { "variant": "--spacing-6: 1.5rem", "divider": false },
+      { "variant": "--spacing-7: 2rem", "divider": false },
+      { "variant": "--spacing-8: 2.5rem", "divider": false },
+      { "variant": "--spacing-9: 3rem", "divider": false },
+      { "variant": "--spacing-10: 3.5rem", "divider": false },
+      { "variant": "--spacing-11: 4rem", "divider": false },
+      { "variant": "--spacing-12: 5rem", "divider": false },
+      { "variant": "--spacing-13: 6rem", "divider": false },
+      { "variant": "--spacing-14: 7rem", "divider": false }
     ]
   },
   {
     "id": "font-size",
     "title": "Font Size",
-    "description": "This class applies various font sizes for different screen sizes.",
-    "variableOne": "Font sizes:",
+    "description": "This section defines various font sizes for different elements.",
+    "variableOne": "",
     "items": [
-      { "variant": "--font-size-h1-mobile: 32px" },
-      { "variant": "--font-size-h1-tablet: 56px" },
-      { "variant": "--font-size-h1-desktop: 64px" },
-      { "variant": "--font-size-h2-mobile: 28px" },
-      { "variant": "--font-size-h2-tablet: 40px" },
-      { "variant": "--font-size-h2-desktop: 56px" },
-      { "variant": "--font-size-h3-mobile: 24px" },
-      { "variant": "--font-size-h3-tablet: 34px" },
-      { "variant": "--font-size-h3-desktop: 40px" },
-      { "variant": "--font-size-h4-mobile: 20px" },
-      { "variant": "--font-size-h4-tablet: 24px" },
-      { "variant": "--font-size-h4-desktop: 28px" },
-      { "variant": "--font-size-h5-mobile: 18px" },
-      { "variant": "--font-size-h5-tablet: 20px" },
-      { "variant": "--font-size-h5-desktop: 20px" },
-      { "variant": "--font-size-body-mobile: 16px" },
-      { "variant": "--font-size-body-tablet: 18px" },
-      { "variant": "--font-size-body-desktop: 18px" },
-      { "variant": "--font-size-footnote: 14px" }
+      {
+        "title": "Heading h1 ",
+        "subtitle": "64px / 56px / 32px",
+        "divider": true,
+        "variant": "fs-h1",
+        "class": "fs-h1"
+      },
+      {
+        "title": "Heading h2 ",
+        "subtitle": "56px / 40px / 28px",
+        "divider": true,
+        "variant": "fs-h2",
+        "class": "fs-h2"
+      },
+      {
+        "title": "Heading h3 ",
+        "subtitle": "40px / 34px / 24px",
+        "divider": true,
+        "variant": "fs-h3",
+        "class": "fs-h3"
+      },
+      {
+        "title": "Heading h4 ",
+        "subtitle": "28px / 24px / 20px",
+        "divider": true,
+        "variant": "fs-h4",
+        "class": "fs-h4"
+      },
+      {
+        "title": "Heading h5 ",
+        "subtitle": "24px / 20px / 18px",
+        "divider": true,
+        "variant": "fs-h5",
+        "class": "fs-h5"
+      },
+      {
+        "title": "Heading body",
+        "subtitle": "18px / 18px / 16px",
+        "divider": true,
+        "variant": "fs-body",
+        "class": "fs-body"
+      },
+      {
+        "title": "Heading footnote",
+        "subtitle": "14px / 14px / 14px",
+        "divider": true,
+        "variant": "fs-footnote",
+        "class": "fs-footnote"
+      }
     ]
   },
   {
@@ -54,47 +140,37 @@
     "description": "This class applies various color variables for theming.",
     "variableOne": "Color variables:",
     "items": [
-      { "variant": "--primary: #ffa294" },
-      { "variant": "--secondary: #a3a3f9" },
-      { "variant": "--tertiary: #545fe7" },
-      { "variant": "--basic-dark: #151321" },
-      { "variant": "--basic-light: #f4f4f4" },
-      { "variant": "--bg-dark: #151321" },
-      { "variant": "--bg-light: #ffffff" }
+      {
+        "variant": "--primary",
+        "title": "color secondary: --primary: #ffa294",
+        "divider": true,
+        "class": "fs-txt--primary fs-p4"
+      },
+      {
+        "variant": "--secondary",
+        "title": "color secondary: --secondary: #a3a3f9",
+        "divider": true,
+        "class": "fs-txt--secondary fs-p4"
+      },
+      {
+        "variant": "--tertiary",
+        "title": "color tertiary: --tertiary: #545fe7",
+        "divider": true,
+        "class": "fs-txt--tertiary fs-p4"
+      },
+      {
+        "variant": "--basic-dark",
+        "title": "color basic-dark: --basic-dark: #151321",
+        "divider": true,
+        "class": "fs-txt-basic-dark fs-p4"
+      },
+      {
+        "variant": "--basic-light",
+        "title": "color basic-light: --basic-light: #f4f4f4",
+        "divider": true,
+        "class": "fs-txt-basic-light fs-p4"
+      }
     ]
-  },
-  {
-    "id": "typography",
-    "title": "Typography - Headings",
-    "description": "This section defines typography styles for headings and body text.",
-    "variableOne": "Font sizes for different breakpoints:",
-    "items": {
-      "mobile": [
-        { "variant": "--font-size-h1: var(--font-size-h1-mobile)" },
-        { "variant": "--font-size-h2: var(--font-size-h2-mobile)" },
-        { "variant": "--font-size-h3: var(--font-size-h3-mobile)" },
-        { "variant": "--font-size-h4: var(--font-size-h4-mobile)" },
-        { "variant": "--font-size-h5: var(--font-size-h5-mobile)" },
-        { "variant": "--font-size-body: var(--font-size-body-mobile)" },
-        { "variant": "--font-size-footnote: var(--font-size-footnote)" }
-      ],
-      "tablet": [
-        { "variant": "--font-size-h1: var(--font-size-h1-tablet)" },
-        { "variant": "--font-size-h2: var(--font-size-h2-tablet)" },
-        { "variant": "--font-size-h3: var(--font-size-h3-tablet)" },
-        { "variant": "--font-size-h4: var(--font-size-h4-tablet)" },
-        { "variant": "--font-size-h5: var(--font-size-h5-tablet)" },
-        { "variant": "--font-size-body: var(--font-size-body-tablet)" }
-      ],
-      "desktop": [
-        { "variant": "--font-size-h1: var(--font-size-h1-desktop)" },
-        { "variant": "--font-size-h2: var(--font-size-h2-desktop)" },
-        { "variant": "--font-size-h3: var(--font-size-h3-desktop)" },
-        { "variant": "--font-size-h4: var(--font-size-h4-desktop)" },
-        { "variant": "--font-size-h5: var(--font-size-h5-desktop)" },
-        { "variant": "--font-size-body: var(--font-size-body-desktop)" }
-      ]
-    }
   },
   {
     "id": "text-colors",
@@ -102,12 +178,36 @@
     "description": "This section defines the color styles for text elements.",
     "variableOne": "Text color classes:",
     "items": [
-      { "variant": "--txt-primary: var(--primary)" },
-      { "variant": "--txt-secondary: var(--secondary)" },
-      { "variant": "--txt-tertiary: var(--tertiary)" },
-      { "variant": "--txt-dark: var(--basic-dark)" },
-      { "variant": "--txt-light: var(--basic-light)" },
-      { "variant": "--txt-center: text-align: center" }
+      {
+        "variant": "fs-txt--primary",
+        "title": "color primary",
+        "divider": true,
+        "class": "fs-txt--primary fs-p4"
+      },
+      {
+        "variant": "fs-txt--secondary",
+        "title": "color secondary",
+        "divider": true,
+        "class": "fs-txt--secondary fs-p4"
+      },
+      {
+        "variant": "fs-txt--tertiary",
+        "title": "color tertiary",
+        "divider": true,
+        "class": "fs-txt--tertiary fs-p4"
+      },
+      {
+        "variant": "fs-txt--dark",
+        "title": "color dark",
+        "divider": true,
+        "class": "fs-txt--dark fs-p4 "
+      },
+      {
+        "variant": "fs-txt--light",
+        "title": "color light",
+        "divider": true,
+        "class": "fs-txt--light fs-p4 "
+      }
     ]
   },
   {
@@ -116,8 +216,20 @@
     "description": "Styles for links.",
     "variableOne": "Link styles:",
     "items": [
-      { "variant": "--link: text-decoration: none" },
-      { "variant": "--link-hover: cursor: pointer; text-decoration: underline" }
+      {
+        "variant": "fs-link:",
+        "title": "link",
+        "subtitle": "text-decoration: none",
+        "divider": true,
+        "class": "fs-link fs-p4 fs-txt--primary"
+      },
+      {
+        "variant": "fs-link:hover",
+        "title": "link:hover",
+        "subtitle": "text-decoration:underline,color:fs-txt--secondary",
+        "divider": true,
+        "class": "fs-link fs-p4 fs-txt--primary"
+      }
     ]
   },
   {
@@ -127,7 +239,10 @@
     "variableOne": "Divider styles:",
     "items": [
       {
-        "variant": "--divider: width: 100%; margin: var(--spacing-6) 0; border-top: 1px solid var(--border-color)"
+        "variant": "fs-divider",
+        "title": "--divider: width: 100%; margin: var(--spacing-6) 0; border-top: 1px solid var(--border-color)",
+        "class": "fs-divider",
+        "divider": false
       }
     ]
   },
@@ -136,18 +251,7 @@
     "title": "Cursor Styles",
     "description": "Styles for cursor.",
     "variableOne": "Cursor styles:",
-    "items": [{ "variant": "--cursor: cursor: pointer" }]
-  },
-  {
-    "id": "flex",
-    "title": "Flexbox Styles",
-    "description": "Flexbox utility styles.",
-    "variableOne": "Flexbox styles:",
-    "items": [
-      {
-        "variant": "--flex: display: flex; flex-direction: row; justify-content: space-evenly; gap: 1rem; align-items: center"
-      }
-    ]
+    "items": [{ "variant": "--cursor: cursor: pointer", "divider": true }]
   },
   {
     "id": "section",
@@ -156,7 +260,9 @@
     "variableOne": "Section styles:",
     "items": [
       {
-        "variant": "--section: margin-left: 220px; display: inline-block; justify-content: flex-start; align-items: flex-start; width: calc(100% - 220px); height: 100vh; padding: var(--spacing-5); padding-top: 120px; overflow-y: auto"
+        "variant": "fs-section",
+        "title": "--section: margin-left: 220px; display: inline-block; justify-content: flex-start; align-items: flex-start; width: calc(100% - 220px); height: 100vh; padding: var(--spacing-5); padding-top: 120px; overflow-y: auto",
+        "divider": false
       }
     ]
   }

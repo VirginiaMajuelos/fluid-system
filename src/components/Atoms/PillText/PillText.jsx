@@ -1,5 +1,3 @@
-// PillText.jsx
-import React from "react";
 import PropTypes from "prop-types";
 import "./PillText.css";
 
@@ -17,7 +15,7 @@ export const PillText = ({ status, children }) => {
 
   return (
     <span
-      className={`fs--text fs--text--${status}`}
+      className={`fs-text fs-text--${status}`}
       style={{
         backgroundColor: bgColor[status],
         color: textColor.light,

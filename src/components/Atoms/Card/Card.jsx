@@ -13,4 +13,5 @@ export const Card = ({ size, children, ...props }) => {
 
 Card.propTypes = {
   size: PropTypes.oneOf(["small", "medium", "large"]),
+  children: PropTypes.node.isRequired,
 };

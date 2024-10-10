@@ -1,5 +1,4 @@
-/* PillIcon.css */
-.fs--icon {
+.fs-icon {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -7,28 +6,26 @@
   padding: 0.5rem;
 }
 
-/* Variantes de forma */
-.fs--icon--circle {
+.fs-icon--circle {
   border-radius: 50%;
   height: 44px;
   width: 44px;
 }
 
-.fs--icon--square {
+.fs-icon--square {
   border-radius: 0.3rem;
   height: 44px;
   width: 44px;
 }
 
-/* Variantes de estado */
-.fs--icon--correct {
+.fs-icon--correct {
   background-color: #15be77;
 }
 
-.fs--icon--warning {
+.fs-icon--warning {
   background-color: #ffa100;
 }
 
-.fs--icon--alert {
+.fs-icon--alert {
   background-color: #ff005c;
 }

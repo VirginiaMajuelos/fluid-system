@@ -1,10 +1,11 @@
 import React, { useState, useCallback } from "react";
 import debounce from "lodash/debounce";
+import PropTypes from "prop-types";
 import "./InputSearch.css";
 
 export const InputSearch = ({
   onSearchChange,
-  labelColor = "fs-txt-light",
+  labelColor = "fs-txt--light",
 }) => {
   const [search, setSearch] = useState("");
 
@@ -31,11 +32,16 @@ export const InputSearch = ({
       <input
         type="text"
         placeholder="Search..."
-        className="fs--inputSearch"
+        className="fs-inputSearch"
         aria-label="Buscar"
         onChange={handleChange}
         value={search}
       />
     </form>
   );
+};
+
+InputSearch.propTypes = {
+  onSearchChange: PropTypes.func.isRequired,
+  labelColor: PropTypes.string,
 };

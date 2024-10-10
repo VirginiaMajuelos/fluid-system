@@ -9,16 +9,16 @@ export const Spinner = ({
 }) => {
   return (
     <div
-      className={`fs--spinner fs--spinner--${variant} fs--spinner--${size} fs--spinner--${color} fs--m4`}
+      className={`fs-spinner fs-spinner--${variant} fs-spinner--${size} fs-spinner--${color} fs-m4`}
     >
       {variant === "dots" ? (
         <>
-          <div className="fs--spinner__dot"></div>
-          <div className="fs--spinner__dot"></div>
-          <div className="fs--spinner__dot"></div>
+          <div className="fs-spinner__dot"></div>
+          <div className="fs-spinner__dot"></div>
+          <div className="fs-spinner__dot"></div>
         </>
       ) : (
-        <div className="fs--spinner__circle"></div>
+        <div className="fs-spinner__circle"></div>
       )}
     </div>
   );

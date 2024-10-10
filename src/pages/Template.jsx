@@ -1,21 +1,21 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-import components from "../Mocks/componentsData.json";
-import componentMap from "../utils/componentMap";
-import { Button } from "../components/Atoms/Button/Button";
-import SideBar from "../components/Molecules/SideBar/SideBar";
-import CodeSnippet from "../components/Molecules/CodeSnippet/CodeSnippet";
-import { Modal } from "../components/Molecules/Modal/Modal"; // Asegúrate de importar el Modal
+import { useSidebar } from "@context/SideBarContext";
+import { Button } from "@atoms/Button/Button";
+import { SideBar } from "@molecules/SideBar/SideBar";
+import { CodeSnippet } from "@molecules/CodeSnippet/CodeSnippet";
+import { Modal } from "@molecules/Modal/Modal";
+import components from "@mocks/componentsData.json";
+import componentMap from "@utils/componentMap";
 import "./Template.css";
 
-const Template = () => {
+export const Template = () => {
+  const { isSidebarOpen, closeSidebar } = useSidebar();
   const { id } = useParams();
   const component = components.find((item) => item.id === id);
 
-  // Estado para controlar la visibilidad del modal
   const [isModalVisible, setIsModalVisible] = useState(false);
 
-  // Funciones para abrir y cerrar el modal
   const handleShowModal = () => setIsModalVisible(true);
   const handleCloseModal = () => setIsModalVisible(false);
 
@@ -34,13 +34,11 @@ const Template = () => {
 
   return (
     <>
-      <SideBar />
-      <section className="fs-template fs-txt-light">
+      <SideBar isOpen={isSidebarOpen} closeSidebar={closeSidebar} />{" "}
+      <section className="fs-section fs-txt--light">
         <h2 className="fs-h2">{component.title}</h2>
         <p className="fs-template__description">{component.description}</p>
         <DynamicComponent {...component.props} />
-
-        {/* Lógica específica para el modal */}
         {component.componentName === "Modal" && (
           <>
             <Button variant="mosaic" onClick={handleShowModal}>
@@ -48,28 +46,25 @@ const Template = () => {
             </Button>
             <Modal show={isModalVisible} onClose={handleCloseModal}>
               <h4 className="fs-h4">Modal Title</h4>
-              <p className="fs--body">This is the content inside the modal.</p>
+              <p className="fs-body">This is the content inside the modal.</p>
             </Modal>
           </>
         )}
 
-        <hr className="fs--divider" />
+        <hr className="fs-divider" />
         <div className="">
           <p className="fs-template__title">Código</p>
         </div>
         <CodeSnippet code={component.code}></CodeSnippet>
-        {/* <pre className="fs--code">
-          <code>{component.code}</code>
-        </pre> */}
         <a
           href={storybookURL}
-          className="fs--link fs-txt-primary"
+          className="fs-link fs-txt--primary"
           target="_blank"
           rel="noopener noreferrer"
         >
           Ver en Storybook
         </a>
-        <hr className="fs--divider" />
+        <hr className="fs-divider" />
         {component.variableOne && (
           <div className="">
             <p className="fs-template__title">{component.variableOne}</p>
@@ -90,5 +85,3 @@ const Template = () => {
     </>
   );
 };
-
-export default Template;

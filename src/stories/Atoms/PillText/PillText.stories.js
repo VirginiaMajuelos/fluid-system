@@ -1,5 +1,4 @@
-// PillText.stories.jsx
-import { PillText } from "../../../components/Atoms/PillText/PillText";
+import { PillText } from "@atoms/PillText/PillText";
 
 export default {
   title: "Atoms/PillText",
