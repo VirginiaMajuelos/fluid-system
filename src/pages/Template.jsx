@@ -30,7 +30,7 @@ export const Template = () => {
   }
 
   const typeStory = component.typeStory.toLowerCase();
-  const storybookURL = `http://localhost:6006/?path=/docs/${typeStory}-${component.id}--docs`;
+  const storybookURL = `https://fluid-system-components.netlify.app/?path=/docs/${typeStory}-${component.id}--docs`;
 
   return (
     <>
