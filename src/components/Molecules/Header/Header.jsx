@@ -15,7 +15,7 @@ export const Header = ({ title = "" }) => {
   return (
     <header>
       <div className="fs-header">
-        <div className="fs-flex">
+        <div className="fs-flex--row">
           <Link to="/">
             <img className="fs-logo" src={logo} alt="Fluid System Logo" />
           </Link>

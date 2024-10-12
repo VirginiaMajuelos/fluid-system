@@ -313,9 +313,16 @@ img {
   margin-right: auto;
 }
 
-.fs-flex {
+.fs-flex--row {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  gap: 1rem;
+  align-items: center;
+}
+.fs-flex--column {
+  display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   gap: 1rem;
   align-items: center;

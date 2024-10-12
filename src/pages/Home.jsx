@@ -61,12 +61,29 @@ export const Home = () => {
               project, or install it via npm:
             </p>
             <div className="fs-code fs-m4">
-              <code className="fs-footnote">npm install fluid-system</code>
+              <code className="fs-footnote">
+                npm install fluid-system-components
+              </code>
               <button className="copy-button" onClick={handleCopy}>
                 Copy
               </button>
             </div>
             {copySuccess && <p className="copy-success">Copied!</p>}
+            <div className="fs-m4 fs-flex--column">
+              <p className="fs-body fs-txt--light">
+                Or you can visit NPM website
+              </p>
+              <Button variant="mosaic">
+                <a
+                  href="https://www.npmjs.com/package/fluid-system-components"
+                  target="_blank"
+                  className=""
+                >
+                  Visit Npm Fluid System
+                </a>
+              </Button>
+            </div>
+
             <p className="fs-body fs-txt--light fs-m4">
               Once installed, you can start using our utility classes and
               components to build your layouts.

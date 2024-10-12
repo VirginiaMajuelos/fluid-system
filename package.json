@@ -1,12 +1,18 @@
 {
   "name": "fluid-system-components",
   "private": false,
-  "version": "1.0.2",
+  "version": "1.0.8",
   "description": "Fluid System is an open-source React component library created to build fast and awesome websites from scratch with easy to use Components.",
   "type": "module",
+  "files": [
+    "dist/",
+    "src/index.js",
+    "README.md",
+    "package.json"
+  ],
   "scripts": {
     "dev": "vite",
-    "build:npm": "vite build --config vite.config.npm.js && cp -R src/styles dist/styles",
+    "build:npm": "BUILD_TARGET=npm vite build && cp -r src/styles dist/styles",
     "build:app": "vite build --config vite.config.app.js",
     "lint": "eslint .",
     "preview": "vite preview --config vite.config.app.js",
@@ -50,7 +56,8 @@
     "globals": "^15.9.0",
     "prop-types": "^15.8.1",
     "storybook": "^8.3.0",
-    "vite": "^5.4.1"
+    "vite": "^5.4.1",
+    "vite-plugin-copy": "^0.1.6"
   },
   "eslintConfig": {
     "extends": [
