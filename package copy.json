@@ -1,20 +1,28 @@
 {
   "name": "fluid-system-components",
   "private": false,
-  "version": "1.0.2",
+  "version": "1.0.1",
   "description": "Fluid System is an open-source React component library created to build fast and awesome websites from scratch with easy to use Components.",
   "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "scripts": {
     "dev": "vite",
-    "build:npm": "vite build --config vite.config.npm.js && cp -R src/styles dist/styles",
-    "build:app": "vite build --config vite.config.app.js",
+    "build": "vite build && cp -R src/styles dist/styles",
     "lint": "eslint .",
-    "preview": "vite preview --config vite.config.app.js",
+    "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "test": "vitest run",
     "test:watch": "vitest watch"
   },
+  "files": [
+    "dist",
+    "dist/styles/global.css",
+    "dist/styles/variables.css",
+    "dist/styles/reset.css",
+    "src/index.js"
+  ],
   "dependencies": {
     "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "^16.0.1",
