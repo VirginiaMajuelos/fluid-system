@@ -1,7 +1,7 @@
 {
   "name": "fluid-system-components",
   "private": false,
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Fluid System is an open-source React component library created to build fast and awesome websites from scratch with easy to use Components.",
   "type": "module",
   "files": [
