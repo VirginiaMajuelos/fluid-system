@@ -38,6 +38,6 @@ export default defineConfig({
         },
       }
     : {
-        outDir: "dist-app", 
+        outDir: "dist-app",
       },
 });
