@@ -2,13 +2,11 @@ import "./styles/global.css";
 import "./styles/reset.css";
 import "./styles/variables.css";
 
-export { Button } from "../src/components/Atoms/Button/Button";
-export { Card } from "../src/components/Atoms//Card/Card";
-export { PillIcon } from "../src/components/Atoms//PillIcon/PillIcon";
-export { PillText } from "../src/components/Atoms//PillText/PillText";
-export { Spinner } from "../src/components/Atoms//Spinner/Spinner";
-export { Accordion } from "../src/components/Molecules/Accordion/Accordion";
-export { Header } from "../src/components/Molecules/Header/Header";
-export { Modal } from "../src/components/Molecules/Modal/Modal";
-
-
+export { default as Button } from "./components/Atoms/Button/Button";
+export { default as Card } from "./components/Atoms/Card/Card";
+export { default as PillIcon } from "./components/Atoms/PillIcon/PillIcon";
+export { default as PillText } from "./components/Atoms/PillText/PillText";
+export { default as Spinner } from "./components/Atoms/Spinner/Spinner";
+export { default as Accordion } from "./components/Molecules/Accordion/Accordion";
+export { default as Header } from "./components/Molecules/Header/Header";
+export { default as Modal } from "./components/Molecules/Modal/Modal";
