@@ -21,3 +21,17 @@
   object-fit: cover;
   border-radius: 8px;
 }
+
+
+.fs-section--component {
+  /* margin-left: 180px; */
+  display: inline-block;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* height: 100vh; */
+  padding: var(--spacing-5);
+  overflow-y: auto;
+  position: relative;
+  width: 100%; /* Asegura que ocupe todo el ancho */
+  height: auto;
+}

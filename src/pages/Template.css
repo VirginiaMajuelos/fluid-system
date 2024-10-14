@@ -39,3 +39,14 @@
     --primary-hover
   ); 
 }
+
+
+.fs-list--utilClass{
+  width: 400px;
+}
+
+@media (max-width: 1024px) {
+  .fs-list--utilClass {
+    width: 300px;
+  }
+}

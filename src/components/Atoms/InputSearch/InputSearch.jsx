@@ -28,7 +28,7 @@ export const InputSearch = ({
 
   return (
     <form onSubmit={handleSubmit}>
-      <label className={labelColor}>Nombre del componente</label>
+      <label className={labelColor}>Component name:</label>
       <input
         type="text"
         placeholder="Search..."

@@ -13,7 +13,7 @@ export const SideBar = ({ isOpen, closeSidebar }) => {
     >
       <nav className="fs-sidebar__menu" role="navigation">
         <Link to={"/components"} onClick={closeSidebar}>
-          <p className="fs-txt--light fs-body">Componentes</p>
+          <p className="fs-txt--light fs-body">Components</p>
         </Link>
         <ul>
           {componentsData.map((componentItem) => (
@@ -28,7 +28,7 @@ export const SideBar = ({ isOpen, closeSidebar }) => {
             </li>
           ))}
         </ul>
-        <p className="fs-txt--light fs-body">Clases útiles</p>
+        <p className="fs-txt--light fs-body">Util classes</p>
         <ul>
           {utilsClassData.map((utilClass) => (
             <li key={utilClass.id}>

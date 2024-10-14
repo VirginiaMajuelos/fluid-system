@@ -329,17 +329,18 @@ img {
 }
 
 .fs-section {
-  margin-left: 220px;
+  margin-left: 180px;
   display: inline-block;
   justify-content: flex-start;
   align-items: flex-start;
-  height: 100vh;
+  /* height: 100vh; */
   padding: var(--spacing-5);
   overflow-y: auto;
-  @media (max-width: 1024px) {
-    margin: 5px;
-  }
+  position: relative;
+  width: 100%; /* Asegura que ocupe todo el ancho */
+  height: auto;
 }
+
 
 /* App.css */
 .fs-app--container {

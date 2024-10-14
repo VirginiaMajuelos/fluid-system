@@ -35,7 +35,7 @@ export const Template = () => {
   return (
     <>
       <SideBar isOpen={isSidebarOpen} closeSidebar={closeSidebar} />{" "}
-      <section className="fs-section fs-txt--light">
+      <section className="fs-section--component fs-txt--light">
         <h2 className="fs-h2">{component.title}</h2>
         <p className="fs-template__description">{component.description}</p>
         <DynamicComponent {...component.props} />
@@ -53,7 +53,7 @@ export const Template = () => {
 
         <hr className="fs-divider" />
         <div className="">
-          <p className="fs-template__title">Código</p>
+          <p className="fs-template__title">Code</p>
         </div>
         <CodeSnippet code={component.code}></CodeSnippet>
         <a
@@ -62,7 +62,7 @@ export const Template = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Ver en Storybook
+          Go Storybook
         </a>
         <hr className="fs-divider" />
         {component.variableOne && (

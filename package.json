@@ -13,7 +13,7 @@
   "scripts": {
     "dev": "vite",
     "build:npm": "BUILD_TARGET=npm vite build && cp -r src/styles dist/styles",
-    "build:app": "vite build --config vite.config.app.js",
+    "build:app": "vite build --config vite.config.js",
     "lint": "eslint .",
     "preview": "vite preview --config vite.config.app.js",
     "storybook": "storybook dev -p 6006",
@@ -57,7 +57,8 @@
     "prop-types": "^15.8.1",
     "storybook": "^8.3.0",
     "vite": "^5.4.1",
-    "vite-plugin-copy": "^0.1.6"
+    "vite-plugin-copy": "^0.1.6",
+    "vite-plugin-lib-inject-css": "^2.1.1"
   },
   "eslintConfig": {
     "extends": [

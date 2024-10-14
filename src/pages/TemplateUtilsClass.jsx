@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { SideBar } from "@molecules/SideBar/SideBar";
 import { CodeSnippet } from "@molecules/CodeSnippet/CodeSnippet";
 import utilsClassData from "@mocks/utilsClassData.json";
+import './Template.css'
 
 export const TemplateUtilsClass = () => {
   const { isSidebarOpen, closeSidebar } = useSidebar();
@@ -23,7 +24,7 @@ export const TemplateUtilsClass = () => {
         {utilsClass.variableOne && (
           <h4 className="fs-h4 fs-p2">{utilsClass.variableOne}</h4>
         )}
-        <ul style={{ width: "400px" }}>
+        <ul className="fs-list--utilClass">
           {Array.isArray(utilsClass.items)
             ? utilsClass.items.map((item, index) => (
                 <li key={index}>

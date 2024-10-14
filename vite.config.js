@@ -2,13 +2,12 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { resolve } from "path";
+import { libInjectCss } from "vite-plugin-lib-inject-css";
 
-// Comprueba si estamos haciendo el build para npm a través de una variable de entorno
 const isNpmBuild = process.env.BUILD_TARGET === "npm";
 
-// Configuración de Vite
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), libInjectCss()],
   resolve: {
     alias: {
       "@components": resolve(__dirname, "src/components"),
@@ -23,7 +22,6 @@ export default defineConfig({
   },
   build: isNpmBuild
     ? {
-        // Configuración para el build de npm
         lib: {
           entry: resolve(__dirname, "src/index.js"),
           name: "FluidSystem",
@@ -40,7 +38,6 @@ export default defineConfig({
         },
       }
     : {
-        // Configuración para el build de la app
-        outDir: "dist-app", // Nombre de carpeta de salida para la app
+        outDir: "dist-app", 
       },
 });

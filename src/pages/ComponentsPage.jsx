@@ -24,7 +24,7 @@ export const ComponentsPage = () => {
     <>
       <SideBar isOpen={isSidebarOpen} closeSidebar={closeSidebar} />
       <section className="fs-section">
-        <h1 className="fs-txt--light">Componentes</h1>
+        <h1 className="fs-txt--light">Components</h1>
         <InputSearch onSearchChange={handleSearchChange} />
         <div className="fs-content-grid">
           {filteredComponents.map((item) => (
