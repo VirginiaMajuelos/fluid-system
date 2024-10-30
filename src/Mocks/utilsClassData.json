@@ -261,7 +261,7 @@
     "items": [
       {
         "variant": "fs-section",
-        "title": "--section: margin-left: 220px; display: inline-block; justify-content: flex-start; align-items: flex-start; width: calc(100% - 220px); height: 100vh; padding: var(--spacing-5); padding-top: 120px; overflow-y: auto",
+        "title": "--section: display: inline-block; justify-content: flex-start; align-items: flex-start; padding: var(--spacing-5); overflow-y: auto; position: relative; width: 100%; height: auto;",
         "divider": false
       }
     ]

@@ -6,7 +6,7 @@ import { ComponentsPage } from "@pages/ComponentsPage.jsx";
 import { Template } from "@pages/Template.jsx";
 import { TemplateUtilsClass } from "@pages/TemplateUtilsClass.jsx";
 import { NotFound } from "@pages/NotFound.jsx";
-import "./styles/global.css";
+import "@styles/global.css";
 
 function App() {
   return (

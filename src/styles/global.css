@@ -330,6 +330,22 @@ img {
 
 .fs-section {
   margin-left: 180px;
+  padding: var(--spacing-5);
+  overflow-y: auto;
+  position: relative;
+  width: 100%;
+  height: auto;
+  transition: margin-left 0.3s ease;
+
+}
+@media (max-width: 768px) { 
+  .fs-section{
+    margin-left: 0; 
+  }
+}
+
+
+.fs-section--component {
   display: inline-block;
   justify-content: flex-start;
   align-items: flex-start;
@@ -337,8 +353,14 @@ img {
   padding: var(--spacing-5);
   overflow-y: auto;
   position: relative;
-  width: 100%; /* Asegura que ocupe todo el ancho */
+  width: 100%;
   height: auto;
+}
+
+@media (max-width: 1078px) and (min-width: 768px) { 
+  .fs-section--component{
+    margin-left: 180px; 
+  }
 }
 
 

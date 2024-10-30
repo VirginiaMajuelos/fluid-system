@@ -9,4 +9,4 @@ export { PillText } from "./components/Atoms/PillText/PillText";
 export { Spinner } from "./components/Atoms/Spinner/Spinner";
 export { Accordion } from "./components/Molecules/Accordion/Accordion";
 export { Header } from "./components/Molecules/Header/Header";
-export { Modal } from "./components/Molecules/Modal/Modal";
+export { Modal } from './components/Molecules/Modal/Modal'

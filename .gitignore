@@ -7,12 +7,14 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencias de Node
 node_modules
-dist
-dist-ssr
-*.local
+
+# Carpetas de build y distribución
+
 
 # Editor directories and files
+*.local
 .vscode/*
 !.vscode/extensions.json
 .idea
@@ -23,5 +25,9 @@ dist-ssr
 *.sln
 *.sw?
 
-# Ignorar DocStorybook.md
+# Configuración
+setupTest.json
+
+# Documentación (interna)
 DocStorybook.md
+README-doc.md

@@ -42,23 +42,27 @@
       { "variant": "size='large'" }
     ]
   },
-  {
-    "id": "modal",
-    "title": "Modal",
-    "description": "This is a modal component used to display overlay content.",
-    "code": "<Modal show={false} onClose={() => {}}>This is a modal</Modal>",
-    "component": "<Modal />",
-    "componentName": "Modal",
-    "typeStory": "molecules",
-    "image": "/assets/Modal.jpg",
-    "props": {
-      "show": false,
-      "onClose": "Function",
-      "children": "This is a modal"
-    },
-    "variableOne": "Visibility modifier:",
-    "items": [{ "variant": "show={true}" }, { "variant": "show={false}" }]
+{
+  "id": "modal",
+  "title": "Modal",
+  "description": "This is a modal component used to display overlay content.",
+  "code": "<Modal triggerId='modal-1' buttonText='Open Modal 1' variant='primary'>{content}</Modal>",
+  "component": "<Modal triggerId='modal-1' buttonText='Open Modal 1' variant='primary'><h2>Modal 1</h2><p>Content</p></Modal>",
+  "componentName": "Modal",
+  "typeStory": "molecules",
+  "image": "/assets/Modal.jpg",
+  "props": {
+    "triggerId": "modal-1",
+    "buttonText": "Open Modal 1",
+    "variant": "primary",
+    "children": "This is the content inside the modal."
   },
+  "variableOne": "Visibility modifier:",
+  "items": [
+    { "variant": "show={true}" },
+    { "variant": "show={false}" }
+  ]
+},
   {
     "id": "spinner",
     "title": "Spinner",
@@ -133,7 +137,7 @@
     "id": "accordion",
     "title": "Accordion",
     "description": "This is an accordion component to show collapsible content.",
-    "code": "<Accordion variant=\"inverse\" />",
+    "code": "<Accordion />",
     "component": "<Accordion />",
     "componentName": "Accordion",
     "typeStory": "molecules",

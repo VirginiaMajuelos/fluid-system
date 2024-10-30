@@ -14,10 +14,6 @@ export const Template = () => {
   const { id } = useParams();
   const component = components.find((item) => item.id === id);
 
-  const [isModalVisible, setIsModalVisible] = useState(false);
-
-  const handleShowModal = () => setIsModalVisible(true);
-  const handleCloseModal = () => setIsModalVisible(false);
 
   if (!component) {
     return <p>Component not found.</p>;
@@ -39,17 +35,6 @@ export const Template = () => {
         <h2 className="fs-h2">{component.title}</h2>
         <p className="fs-template__description">{component.description}</p>
         <DynamicComponent {...component.props} />
-        {component.componentName === "Modal" && (
-          <>
-            <Button variant="mosaic" onClick={handleShowModal}>
-              Open Modal
-            </Button>
-            <Modal show={isModalVisible} onClose={handleCloseModal}>
-              <h4 className="fs-h4">Modal Title</h4>
-              <p className="fs-body">This is the content inside the modal.</p>
-            </Modal>
-          </>
-        )}
 
         <hr className="fs-divider" />
         <div className="">

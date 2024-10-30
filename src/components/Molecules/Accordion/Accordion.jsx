@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { AiOutlineDown } from "react-icons/ai";
-import "./Accordion.css"; 
+import "./Accordion.css";
 
 export const Accordion = ({ variant = "light", children, ...props }) => {
   const [show, setShow] = useState(false);
@@ -12,7 +12,11 @@ export const Accordion = ({ variant = "light", children, ...props }) => {
 
   return (
     <div className={`fs-accordion fs-accordion--${variant}`}>
-      <div className="fs-accordion--header" onClick={handleShow} {...props}>
+      <div
+        className={`fs-accordion--header fs-accordion--header--${variant}`}
+        onClick={handleShow}
+        {...props}
+      >
         <p className="fs-body">Accordion</p>
         <AiOutlineDown
           className={`fs-accordion--icon ${
@@ -21,7 +25,9 @@ export const Accordion = ({ variant = "light", children, ...props }) => {
         />
       </div>
       <div
-        className={`fs-accordion-body ${show ? "fs-accordion-body__show" : ""}`}
+        className={`fs-accordion-body ${
+          show ? "fs-accordion-body__show" : ""
+        } fs-accordion-body--${variant}`}
       >
         <p className="fs-body">
           {children ||
