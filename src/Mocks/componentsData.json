@@ -138,12 +138,12 @@
     "title": "Accordion",
     "description": "This is an accordion component to show collapsible content.",
     "code": "<Accordion />",
-    "component": "<Accordion />",
+    "component": "<Accordion variant='light'/>",
     "componentName": "Accordion",
     "typeStory": "molecules",
     "image": "/assets/Accordion.png",
     "props": {
-      "variant": "inverse",
+      "variant": "light",
       "children": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
     },
     "variableOne": "Appearance modifier:",

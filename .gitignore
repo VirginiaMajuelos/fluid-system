@@ -24,6 +24,9 @@ node_modules
 *.njsproj
 *.sln
 *.sw?
+.storybook/
+dist-app/
+dist-lib/
 
 # Configuración
 setupTest.json

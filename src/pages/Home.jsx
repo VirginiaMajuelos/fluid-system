@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@atoms/Button/Button";
-import { Modal } from "@molecules/Modal/Modal";
 import imgHome from "@assets/img-home.webp";
 import "./Home.css";
 

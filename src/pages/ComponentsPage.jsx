@@ -26,9 +26,9 @@ export const ComponentsPage = () => {
       <section className="fs-section">
         <h1 className="fs-txt--light">Components</h1>
         <InputSearch onSearchChange={handleSearchChange} />
-        <div className="fs-content-grid">
+        <div className="fs-content-grid--movies">
           {filteredComponents.map((item) => (
-            <div key={item.id}>
+            <div className="fs-content-grid__movie" key={item.id}>
               <p className="fs-txt--light fs-m2">{item.componentName}</p>
               <Link
                 to={`/components/${item.id}`}

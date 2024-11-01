@@ -1,11 +1,8 @@
-.fs-content-grid {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
+.fs-content-grid--movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); 
   gap: 1rem;
-  margin-top: 20px;
+  margin: 40px 20px; 
 }
 
 .fs-section h1 {
@@ -16,7 +13,7 @@
 }
 
 .fs-img-components {
-  width: 250px;
+  width: 100%;
   height: 150px;
   object-fit: cover;
   border-radius: 8px;

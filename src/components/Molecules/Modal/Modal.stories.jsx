@@ -1,26 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import { action } from "@storybook/addon-actions";
-import { Modal } from "@molecules/Modal/Modal";
+import { Modal } from "./Modal";
+import { Button } from "@atoms/Button/Button";
 
 export default {
   title: "Molecules/Modal",
   component: Modal,
   tags: ["autodocs"],
   parameters: {
-    layout: "padded",
+    layout: "fullscreen",
   },
   args: {
     onClose: action("closed"),
-    triggerId: "modal-1", 
-    buttonText: "Open Modal", 
-    variant: "secondary",
   },
 };
 
 const Template = (args) => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleClose = () => {
+    setShowModal(false);
+    args.onClose();
+  };
+
   return (
     <div className="fs-p24">
-      <Modal {...args}>
+      <Button variant="secondary" onClick={() => setShowModal(true)}>
+        Show Modal
+      </Button>
+      <Modal {...args} show={showModal} onClose={handleClose}>
         <h4 className="fs-h4">Modal Title</h4>
         <p className="fs-p2 fs-body">This is the content inside the modal.</p>
       </Modal>

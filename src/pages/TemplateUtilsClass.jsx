@@ -17,7 +17,7 @@ export const TemplateUtilsClass = () => {
   return (
     <>
       <SideBar isOpen={isSidebarOpen} closeSidebar={closeSidebar} />{" "}
-      <section className="fs-template fs-txt--light">
+      <section className="fs-section fs-txt--light">
         <h2 className="fs-h2">{utilsClass.title}</h2>
         <p className="fs-txt--body">{utilsClass.description}</p>
         <hr className="fs-divider" />
